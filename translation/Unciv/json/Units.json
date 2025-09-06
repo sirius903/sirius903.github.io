@@ -1,0 +1,716 @@
+[
+  {
+    "key": "UNITS_MAORI-WARRIOR",
+    "original": "Maori Warrior",
+    "translation": "마오리 전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_JAGUAR",
+    "original": "Jaguar",
+    "translation": "재규어 전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BRUTE",
+    "original": "Brute",
+    "translation": "야만인",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ARCHER",
+    "original": "Archer",
+    "translation": "궁수",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BOWMAN",
+    "original": "Bowman",
+    "translation": "궁병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SLINGER",
+    "original": "Slinger",
+    "translation": "투석병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SKIRMISHER",
+    "original": "Skirmisher",
+    "translation": "척후병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WORK-BOATS",
+    "original": "Work Boats",
+    "translation": "작업선",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TRIREME",
+    "original": "Trireme",
+    "translation": "삼단노선",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GALLEY",
+    "original": "Galley",
+    "translation": "갤리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CHARIOT-ARCHER",
+    "original": "Chariot Archer",
+    "translation": "궁전차",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WAR-CHARIOT",
+    "original": "War Chariot",
+    "translation": "이륜전차",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WAR-ELEPHANT",
+    "original": "War Elephant",
+    "translation": "전투 코끼리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_HOPLITE",
+    "original": "Hoplite",
+    "translation": "호플리테스",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_PERSIAN-IMMORTAL",
+    "original": "Persian Immortal",
+    "translation": "이모탈",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MARAUDER",
+    "original": "Marauder",
+    "translation": "약탈자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_HORSEMAN",
+    "original": "Horseman",
+    "translation": "기마병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_COMPANION-CAVALRY",
+    "original": "Companion Cavalry",
+    "translation": "헤타이로이",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CATAPULT",
+    "original": "Catapult",
+    "translation": "투석기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BALLISTA",
+    "original": "Ballista",
+    "translation": "발리스타",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SWORDSMAN",
+    "original": "Swordsman",
+    "translation": "검사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LEGION",
+    "original": "Legion",
+    "translation": "군단병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MOHAWK-WARRIOR",
+    "original": "Mohawk Warrior",
+    "translation": "모호크 전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LANDSKNECHT",
+    "original": "Landsknecht",
+    "translation": "란츠크네흐트",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_KNIGHT",
+    "original": "Knight",
+    "translation": "기사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CAMEL-ARCHER",
+    "original": "Camel Archer",
+    "translation": "낙타궁병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CONQUISTADOR",
+    "original": "Conquistador",
+    "translation": "콩키스타도르",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_NARESUAN'S-ELEPHANT",
+    "original": "Naresuan's Elephant",
+    "translation": "나레수안 코끼리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MANDEKALU-CAVALRY",
+    "original": "Mandekalu Cavalry",
+    "translation": "만데칼루 기병대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_KESHIK",
+    "original": "Keshik",
+    "translation": "케시크",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CROSSBOWMAN",
+    "original": "Crossbowman",
+    "translation": "석궁병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CHU-KO-NU",
+    "original": "Chu-Ko-Nu",
+    "translation": "연노병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LONGBOWMAN",
+    "original": "Longbowman",
+    "translation": "장궁병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TREBUCHET",
+    "original": "Trebuchet",
+    "translation": "트레뷰셋",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_HWACH'A",
+    "original": "Hwach'a",
+    "translation": "화차",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LONGSWORDSMAN",
+    "original": "Longswordsman",
+    "translation": "장검병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SAMURAI",
+    "original": "Samurai",
+    "translation": "사무라이",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BERSERKER",
+    "original": "Berserker",
+    "translation": "광전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CARAVEL",
+    "original": "Caravel",
+    "translation": "캐러벨",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TURTLE-SHIP",
+    "original": "Turtle Ship",
+    "translation": "거북선",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MUSKETEER",
+    "original": "Musketeer",
+    "translation": "총사대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_JANISSARY",
+    "original": "Janissary",
+    "translation": "예니체리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MINUTEMAN",
+    "original": "Minuteman",
+    "translation": "민병대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TERCIO",
+    "original": "Tercio",
+    "translation": "테르시오",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_FRIGATE",
+    "original": "Frigate",
+    "translation": "프리깃",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SHIP-OF-THE-LINE",
+    "original": "Ship of the Line",
+    "translation": "전열함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LANCER",
+    "original": "Lancer",
+    "translation": "창기병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SIPAHI",
+    "original": "Sipahi",
+    "translation": "시파히 기병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CANNON",
+    "original": "Cannon",
+    "translation": "대포",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_NORWEGIAN-SKI-INFANTRY",
+    "original": "Norwegian Ski Infantry",
+    "translation": "노르웨이 스키 보병대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CAVALRY",
+    "original": "Cavalry",
+    "translation": "기병대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_COSSACK",
+    "original": "Cossack",
+    "translation": "코사크",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_IRONCLAD",
+    "original": "Ironclad",
+    "translation": "철갑함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ARTILLERY",
+    "original": "Artillery",
+    "translation": "야포",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_FOREIGN-LEGION",
+    "original": "Foreign Legion",
+    "translation": "외인부대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CARRIER",
+    "original": "Carrier",
+    "translation": "항공모함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BATTLESHIP",
+    "original": "Battleship",
+    "translation": "전함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ANTI-AIRCRAFT-GUN",
+    "original": "Anti-Aircraft Gun",
+    "translation": "대공포",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_DESTROYER",
+    "original": "Destroyer",
+    "translation": "구축함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ZERO",
+    "original": "Zero",
+    "translation": "제로센",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_B17",
+    "original": "B17",
+    "translation": "B-17 폭격기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_PARATROOPER",
+    "original": "Paratrooper",
+    "translation": "공수부대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TANK",
+    "original": "Tank",
+    "translation": "전차",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_PANZER",
+    "original": "Panzer",
+    "translation": "팬저",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ANTI-TANK-GUN",
+    "original": "Anti-Tank Gun",
+    "translation": "대전차포",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ATOMIC-BOMB",
+    "original": "Atomic Bomb",
+    "translation": "원자폭탄",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ROCKET-ARTILLERY",
+    "original": "Rocket Artillery",
+    "translation": "다연장 로켓포",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MOBILE-SAM",
+    "original": "Mobile SAM",
+    "translation": "이동식 SAM 발사대",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GUIDED-MISSILE",
+    "original": "Guided Missile",
+    "translation": "유도 미사일",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_NUCLEAR-MISSILE",
+    "original": "Nuclear Missile",
+    "translation": "핵미사일",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_HELICOPTER-GUNSHIP",
+    "original": "Helicopter Gunship",
+    "translation": "전투헬기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_NUCLEAR-SUBMARINE",
+    "original": "Nuclear Submarine",
+    "translation": "핵 잠수함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MECHANIZED-INFANTRY",
+    "original": "Mechanized Infantry",
+    "translation": "기계화보병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MISSILE-CRUISER",
+    "original": "Missile Cruiser",
+    "translation": "미사일 순양함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MODERN-ARMOR",
+    "original": "Modern Armor",
+    "translation": "현대 전차",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_JET-FIGHTER",
+    "original": "Jet Fighter",
+    "translation": "제트 전투기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GIANT-DEATH-ROBOT",
+    "original": "Giant Death Robot",
+    "translation": "거대 전투 로봇",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_STEALTH-BOMBER",
+    "original": "Stealth Bomber",
+    "translation": "스텔스 폭격기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-ARTIST",
+    "original": "Great Artist",
+    "translation": "위대한 예술가",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-SCIENTIST",
+    "original": "Great Scientist",
+    "translation": "위대한 과학자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-MERCHANT",
+    "original": "Great Merchant",
+    "translation": "위대한 상인",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-ENGINEER",
+    "original": "Great Engineer",
+    "translation": "위대한 기술자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-GENERAL",
+    "original": "Great General",
+    "translation": "위대한 장군",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_KHAN",
+    "original": "Khan",
+    "translation": "칸",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SS-BOOSTER",
+    "original": "SS Booster",
+    "translation": "SS 추진기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SS-COCKPIT",
+    "original": "SS Cockpit",
+    "translation": "SS 조종부",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SS-ENGINE",
+    "original": "SS Engine",
+    "translation": "SS 엔진",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SS-STASIS-CHAMBER",
+    "original": "SS Stasis Chamber",
+    "translation": "SS 동면 장치",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_ATLATLIST",
+    "original": "Atlatlist",
+    "translation": "아틀라틀 투창병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_QUINQUEREME",
+    "original": "Quinquereme",
+    "translation": "오단노선",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_DROMON",
+    "original": "Dromon",
+    "translation": "드로몬",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_HORSE-ARCHER",
+    "original": "Horse Archer",
+    "translation": "궁기병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_BATTERING-RAM",
+    "original": "Battering Ram",
+    "translation": "공성추",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_PICTISH-WARRIOR",
+    "original": "Pictish Warrior",
+    "translation": "픽트족 전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_AFRICAN-FOREST-ELEPHANT",
+    "original": "African Forest Elephant",
+    "translation": "아프리카 숲 코끼리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CATAPHRACT",
+    "original": "Cataphract",
+    "translation": "카타프락토이",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_COMPOSITE-BOWMAN",
+    "original": "Composite Bowman",
+    "translation": "합성궁병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GALLEASS",
+    "original": "Galleass",
+    "translation": "갈레아스",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SEA-BEGGAR",
+    "original": "Sea Beggar",
+    "translation": "제고이센",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GATLING-GUN",
+    "original": "Gatling Gun",
+    "translation": "개틀링 기관총",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_CAROLEAN",
+    "original": "Carolean",
+    "translation": "캐롤리언",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MEHAL-SEFARI",
+    "original": "Mehal Sefari",
+    "translation": "메할 사파리",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-WAR-INFANTRY",
+    "original": "Great War Infantry",
+    "translation": "1차 세계대전 보병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_TRIPLANE",
+    "original": "Triplane",
+    "translation": "1차 세계대전 전투기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-WAR-BOMBER",
+    "original": "Great War Bomber",
+    "translation": "1차 세계대전 폭격기",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MACHINE-GUN",
+    "original": "Machine Gun",
+    "translation": "기관총",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_LANDSHIP",
+    "original": "Landship",
+    "translation": "지상함",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_GREAT-PROPHET",
+    "original": "Great Prophet",
+    "translation": "위대한 선지자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MISSIONARY",
+    "original": "Missionary",
+    "translation": "선교사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_INQUISITOR",
+    "original": "Inquisitor",
+    "translation": "이단심문관",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WARRIOR",
+    "original": "Warrior",
+    "translation": "전사",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SPEARMAN",
+    "original": "Spearman",
+    "translation": "창병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_PIKEMAN",
+    "original": "Pikeman",
+    "translation": "장창병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_MUSKETMAN",
+    "original": "Musketman",
+    "translation": "머스킷총병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_INFANTRY",
+    "original": "Infantry",
+    "translation": "보병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WORKER",
+    "original": "Worker",
+    "translation": "노동자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SCOUT",
+    "original": "Scout",
+    "translation": "정찰병",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_SETTLER",
+    "original": "Settler",
+    "translation": "개척자",
+    "stage": 1
+  },
+  {
+    "key": "UNITS_WARRIOR_DESCRIPTION",
+    "original": "This is your basic, club-swinging fighter.",
+    "translation": "곤봉을 휘두르는 가장 기초적인 전투 유닛입니다.",
+    "stage": 1
+  }
+]

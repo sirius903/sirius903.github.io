@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="미술 수행평가">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sirius903.github.io/%EB%AF%B8%EC%88%A0-%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80">
+    <meta property="og:title" content="sirius903">
+    <meta property="og:description" content="미술 수행평가">
+    <meta property="og:image" content="https://sirius903.github.io/%EB%AF%B8%EC%88%A0-%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/desktop.png">
+    <meta property="og:site_name" content="sirius903">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sirius903</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header class="move">
+        <h1 class="title">&lt;sirius&gt;</h1>
+    </header>
+    <div id="title" class="">
+        <h1 class="title" id="title1">&lt;sirius&gt;</h1>
+        <h1 class="title" id="title2">&lt;/903&gt;</h1>
+    </div>
+    <div>
+        <img src="logo.png" id="logo" class="move">
+    </div>
+    <div id="web" class="move">
+        <div id="WEB">WEB</div>
+        <div id="group" class="">
+            <div id="site">site</div>
+            <div id="js">JS</div>
+        </div>
+        <div id="beomeo" class="move">
+            <img id="img" src="web.png">
+            <a href="https://sirius903.github.io/2023-%EB%B2%94%EC%96%B4%EC%A0%9C/"> ★☆여기 클릭☆★</a>
+        </div>
+        <div id="game" class="hidden move">
+            <div id="GAME">GAME</div>
+            <div id="g-group">
+                <div id="game1">🎮</div>
+                <div id="card">🂡</div>
+            </div>
+        </div>
+    </div>
+    <footer class="hidden move">
+        <p id="icon">&nbsp;&nbsp;&nbsp;( ◔‸◔)<br>＿(__つ/￣￣￣/＿</p>
+        <p id="desktop">┌───────────────┐<br>　　　　　Only Desktop<br>   └───────────────┘<br>   　　ᕱ ᕱ ||<br>   　 ( ･ω･ ||<br>   　 /　つΦ<br></p>
+        <h1 class="title">&lt;/903&gt;</h1>
+    </footer>
+    <script>
+        document.getElementById('title').addEventListener("click", function(){
+            this.className = 'move';
+            setTimeout(function(){
+                document.querySelector('header').className = '';
+                setTimeout(function(){
+                    document.getElementById('title').className = 'hidden';
+                    document.getElementById('logo').className = '';
+                    document.getElementById('logo').addEventListener("click", function(){
+                        this.className = 'fixed';
+                        document.getElementById('web').className = '';
+                        setTimeout(() => {
+                            document.getElementById('web').className = 'fixed';
+                            document.getElementById('group').className = 'fixed';
+                            setTimeout(() => {
+                                document.getElementById('beomeo').className = '';
+                                document.getElementById('game').className = 'move';
+                                setTimeout(() => {
+                                    document.getElementById('game').className = '';
+                                    setTimeout(() => {
+                                        document.querySelector('footer').className = 'move';
+                                        setTimeout(() => {
+                                            document.querySelector('footer').className = '';
+                                        }, 10);
+                                    }, 1000)
+                                }, 1000)
+                            }, 500);
+                        }, 1500);
+                    })
+                }, 50);
+            }, 650);
+        })
+    </script>
+</body>
+</html>

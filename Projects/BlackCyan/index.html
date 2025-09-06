@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackCyan</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+  <script type="module" src="main.js"></script>
+  <div>
+    <div class="main-menu container">
+        <div class="background" id="main-background">
+        </div>
+        <div id="main-title">
+          <div class="main-title n1">Black</div>
+          <div class="main-title n2">Cyan</div>
+        </div>
+        <div id="main-menu_btns">
+          <div id="to_log-in" class="to_entry">Log In</div>
+          <div id="to_sign-up" class="to_entry">Sign Up</div>
+        </div>
+        <div class="background hidden" id="entry-background"></div>
+        <div id="exit_btn" class="hidden">Exit</div>
+        <div id="entry_section" class="hidden">
+          <div id="log-in_section" class="hidden">
+            <h1>Welcom!</h1>
+            <div class="entry_row">
+              <div class="entry_label">Email</div>
+              <input class="entry_item" id="log-in_email" type="email">
+            </div>
+            <div class="entry_row">
+              <div class="entry_label">Password</div>
+              <input class="entry_item" id="log-in_password" type="password">
+            </div>
+            <div id="log-in" class="entry">LOG IN</div>
+            <a class="text">Unless yet registered</a>
+            <a id="change_to_regist">Go to regist</a>
+            <a class="text">or</a>
+            <a id="guest">Play as a guest</a>
+          </div>
+          <div id="sign-up_section" class="hidden">
+            <h1>New Account</h1>
+            <div class="entry_row">
+              <div class="entry_label">Email</div>
+              <input class="entry_item" id="sign-up_email" type="email">
+            </div>
+            <div class="entry_row">
+              <div class="entry_label">Password</div>
+              <input class="entry_item" id="sign-up_password" type="password">
+            </div>
+            <div class="entry_row">
+              <div class="entry_label">GameId</div>
+              <input class="entry_item" id="sign-up_id" type="text">
+            </div>
+            <div id="id-error" class="entry-error"></div>
+            <div id="sign-up" class="entry">SIGN UP</div>
+            <div id="signup-error" class="entry-error"></div>
+            <a class="text">If already registered</a>
+            <a id="change_to_login">Go to log-in</a>
+          </div>
+        </div>
+    </div>
+    <div class="list container scroller hidden">
+      <div id="players">
+        <div id="my-profile">
+          <img id="my-avatar" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+          <div id="my-data">
+            <div id="my-id"></div>
+            <div id="my-level"></div>
+          </div>
+        </div>
+        <div id="other-players">
+          <div id="players-title">
+            <h1 class="title">Players</h1>
+            <div id="players-number">(0 / 100)</div>
+          </div>
+          <div id="players-list">
+            <!-- <div class="player">
+              <div class="player-level">Lv. 1</div>
+              <div class="player-id">dummy</div>
+              <div class="player-status online" title="online">●</div>
+            </div> -->
+          </div>
+          <div id="room-players-title" class="hidden">
+            <h1 class="title">In-Room</h1>
+            <div id="room-players-number">(0 / 4)</div>
+          </div>
+          <div id="room-players">
+            <!-- <div class="room-player">
+              <img class="room-player-avatar" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+              <div class="room-player-text">
+                <div class="room-player-id">dummy</div>
+                <div class="room-player-data">
+                  <div class="room-player-level">Lv. 1</div>
+                  <div class="room-player-host">Host</div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div id="room">
+        <div class="rooms-list">
+          <h1 class="title">ROOMS</h1>
+          <input id="rooms-id" placeholder="enter room id and hit enter..." autocomplete="off" type="text">
+          <div id="rooms" class="scroller">
+            <!--
+              <div class="rooms_item">
+                <div class="rooms-title">방 이름</div>
+                <div class="rooms-limit">1 / 4</div>
+              </div>
+            -->
+          </div>
+        </div>
+        <div class="room hidden">
+          <h1 id="room_title">-</h1>
+          <p id="moreinfo">hover over a setting for more info</p>
+          <div id="escape">
+            <div id="escape-icon">×</div>
+          </div>
+          <div id="room-configs">
+              <div class="room_tabs flex-column">
+                  <div class="room_tab active" onclick="//tab(0)">Room</div>
+                  <div class="room_tab" onclick="//tab(1)">Match</div>
+                  <div class="room_tab" onclick="//tab(2)">Game</div>
+              </div>
+              <div class="scroller room_content">
+                  <div>
+                      <div class="config_row">
+                          <div class="config_label flex-item">room name</div>
+                          <input id="room-title" class="config_item flex-item" value="-">
+                      </div>
+                      <div class="config_row">
+                          <div class="config_label flex-item">player limit</div>
+                          <input type="number" id="room-limit" class="config_item flex-item" max="4" min="2" value="2">
+                      </div>
+                  </div>
+              </div>
+              <div class="scroller room_content hidden">2</div>
+              <div class="scroller room_content hidden">3</div>
+          </div>
+          <div id="create-button" class="room-btn active">CREATE</div>
+          <div id="change-button" class="room-btn active hidden">CHANGE</div>
+          <div id="start-button" class="room-btn active hidden">START</div>
+      </div>
+
+      </div>
+      <div class="chat-box" id="full-chat-box">
+        <h1 class="title">CHAT</h1>
+        <div id="full-chat" class="chat scroller">
+          <div class="chat-message chat-banner">
+            <h1 class="chat-tag">[CMD]</h1>
+            <p>Welcome to chat! Please remember to be civil to your opponents.</p>
+          </div>
+          <!-- 
+            <div class="chat-message">
+              <h1 class="chat-tag">anonymous</h1>
+              <p>message</p>
+            </div> 
+          -->
+        </div>
+        <input id="full-chat-input" class="chat-input" placeholder="message..." autocomplete="off" type="text">
+      </div>
+      <div class="ad">β</div>
+      <div id="settings">
+        <div class="settings-tabs left">
+          <div class="settings-tab">1-1</div>
+          <div class="settings-tab">✉</div>
+          <div class="settings-tab">1-3</div>
+          <div class="settings-tab">1-4</div>
+        </div>
+        <div id="settings-diplay">
+          <div class="settings hidden"></div>
+          <div class="settings hidden" id="room-chat-box">
+            <h1 class="title">IN-ROOM CHAT</h1>
+            <div id="room-chat">
+              <div class="chat-message chat-banner">
+                <h1 class="chat-tag">[CMD]</h1>
+                <p>Welcome to room! Please remember to be civil to your opponents.</p>
+              </div>
+              <!--  -->
+            </div>
+            <input id="room-chat-input" class="chat-input" placeholder="message..." autocomplete="off" type="text">
+          </div>
+          <div class="hidden"></div>
+          <div class="hidden"></div>
+        </div>
+        <div class="settings-tabs right hidden">
+          <div class="settings-tab">2-1</div>
+          <div class="settings-tab">2-2</div>
+          <div class="settings-tab">2-3</div>
+          <div class="settings-tab">2-4</div>
+        </div>
+      </div>
+      <div class="ad">β</div>
+    </div>
+    <div class="game container hidden">
+      <div id="player1" class="player-section vertical">
+        <div class="profile">
+          <img class="profile-img" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+          <div class="profile-id">dummy</div>
+        </div>
+        <div class="item-cards">
+          <!-- <div class="item-card">1</div>
+          <div class="item-card">2</div>
+          <div class="item-card">2</div> -->
+        </div>
+        <div class="action-cards">
+          <!-- <div class="action-card">3</div> -->
+        </div>
+      </div>
+      <div id="player2" class="player-section horizontal">
+        <div class="profile">
+          <img class="profile-img" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+          <div class="profile-id">dummy</div>
+        </div>
+        <div class="item-cards">
+          <!-- <div class="item-card">1</div>
+          <div class="item-card">2</div> -->
+        </div>
+        <div class="action-cards">
+          <!-- <div class="action-card">3</div> -->
+        </div>
+      </div>
+      <div id="cards-section">
+        <div id="player2-graveyard" class="graveyard">
+          <!-- <div class="item-card">1</div> -->
+        </div>
+        <div id="player1-graveyard" class="graveyard">
+          <!-- <div class="item-card">1</div> -->
+        </div>
+        <div id="cards">
+          <div class="item-card">item</div>
+          <div class="action-card">action</div>
+        </div>
+        <div id="player3-graveyard" class="graveyard">
+          <!-- <div class="item-card">1</div> -->
+        </div>
+        <div id="my-graveyard" class="graveyard">
+          <!-- <div class="item-card">1</div> -->
+        </div>
+      </div>
+      <div id="player3" class="player-section vertical">
+        <div class="profile">
+          <img class="profile-img" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+          <div class="profile-id">dummy</div>
+        </div>
+        <div class="item-cards">
+          <!-- <div class="item-card">1</div>
+          <div class="item-card">2</div>
+          <div class="item-card">2</div> -->
+        </div>
+        <div class="action-cards">
+          <!-- <div class="action-card">3</div> -->
+        </div>
+      </div>
+      <div id="my-section" class="player-section horizontal">
+        <div class="profile">
+          <img class="profile-img" src="https://fastly.picsum.photos/id/251/250/250.jpg?hmac=_NUJeiKDfHVqhYGCW_85ojnjvg9ZWfHfMGppohybKyE">
+          <div class="profile-id">dummy</div>
+        </div>
+        <div class="item-cards">
+          <!-- <div class="item-card">1</div>
+          <div class="item-card">2</div> -->
+        </div>
+        <div class="action-cards">
+          <!-- <div class="action-card">3</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="entry.js"></script>
+  <script src="sha256.js"></script>
+</body>
+</html>

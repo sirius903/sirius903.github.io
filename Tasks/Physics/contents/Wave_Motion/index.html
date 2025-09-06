@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="playing-bar">
+            <label for="fps" class="playing-labels">FPS</label>
+            <input placeholder="fps" id="fps" class="playing-inputs" min="1" max="1000" type="number" value="50">
+            <label for="meter" class="playing-labels">Size</label>
+            <input placeholder="Size" id="meter" class="playing-inputs" min="50" max="10000" type="number" value="150">
+            <div class="playing-btns" id="reset"><img src="../../images/reset.svg"></div>
+            <div class="playing-btns" id="play"><img src="../../images/play.svg"></div>
+            <div class="playing-btns" id="stop"><img src="../../images/stop.svg"></div>
+            <div class="playing-btns speed">x⅒</div>
+            <div class="playing-btns speed">x¼</div>
+            <div class="playing-btns speed">x½</div>
+            <div class="playing-btns speed">x1</div>
+            <div class="playing-btns speed">x2</div>
+            <div class="playing-btns speed">x5</div>
+            <div class="playing-btns" id="initialize">↻</div>
+            <div id="back-btn">Back</div>
+        </div>
+        <div id="content">
+            <canvas id="canvas" width="1500px" height="1500px" style="width: 500px;"></canvas>
+            <div id="resizer">||</div>
+            <div id="configs" style="width: calc(100vw - 510px);">
+                <section class="converts">
+                    <h1>Floater</h1>
+                    <form onsubmit="return false;">
+                     <label for="floater-radius" title="The Radius of The Floater">Radius</label>
+                     <input type="number" placeholder="0.25" value="0.25" id="floater-radius" min="0" max="100" step="0.01" onchange="change(31, this.value);" title="Converts The Radius of The Floater(Default : 0.25)">
+                     <input type="reset" value="reset" onclick="change(31, 1)" title="Resets The Radius(Default : 0.25)">
+                     <input type="submit" value="submit" onclick="change(31, document.getElementById('floater-radius').value);" title="The Radius Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>1st Wave</h1>
+                    <form onsubmit="return false;">
+                     <label for="amplitude-0" title="The Amplitude of The Wave">Amplitude</label>
+                     <input type="number" placeholder="1" value="1" id="amplitude-0" min="-100" max="100" step="0.1" onchange="change(28, this.value, 0);" title="Converts The Amplitude of The Wave(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(28, 1, 0)" title="Resets The Amplitude(Default : 1)">
+                     <input type="submit" value="submit" onclick="change(28, document.getElementById('amplitude-0').value, 0);" title="The Amplitude Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="wavelength-0" title="The Wavelength of The Wave">Wavelength</label>
+                     <input type="number" placeholder="4" value="4" id="wavelength-0" min="-100" max="100" step="0.1" onchange="change(29, this.value, 0);" title="Converts The Wavelength of The Wave(Default : 4)">
+                     <input type="reset" value="reset" onclick="change(29, 4, 0)" title="Resets The Wavelength(Default : 4)">
+                     <input type="submit" value="submit" onclick="change(29, document.getElementById('wavelength-0').value, 0);" title="The Wavelength Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="period-0" title="The Period of The Wave">Period</label>
+                     <input type="number" placeholder="1" value="1" id="period-0" min="-100" max="100" step="0.1" onchange="change(30, this.value, 0);" title="Converts The Period of The Wave(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(30, 1, 0)" title="Resets The Period(Default : 1)">
+                     <input type="submit" value="submit" onclick="change(30, document.getElementById('period-0').value, 0);" title="The Period Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <button id="add-wave">Add Wave</button>
+                </section>
+                <section class="converts">
+                    <h1>Results</h1>
+                    <form onsubmit="return false;">
+                     <label title="Y-coordinate of The Floater">Y-coordinate</label>
+                     <input type="number" value="0" id="y-coordinate" title="Y-coordinate of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Maximum Height of The Floater">Maximum Height</label>
+                     <input type="number" value="0" id="maximum-height" title="Maximum Height of The Floater" disabled>
+                     <input type="reset" value="reset" onclick="maximum = 0;" title="Resets Maximum Height">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Minimum Height of The Floater">Maximum Height</label>
+                     <input type="number" value="0" id="minimum-height" title="Minimum Height of The Floater" disabled>
+                     <input type="reset" value="reset" onclick="minimum = Infinity;" title="Resets Minimum Height">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="../../config.js"></script>
+    <script src="../../resizer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

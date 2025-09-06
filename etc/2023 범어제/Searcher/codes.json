@@ -1,0 +1,22 @@
+[
+    ["Math.sqrt(25)", "sqrt(25)"],
+    ["Date.now()", "now()"],
+    ["fetch('https://api.example.com/data')", "fetchData('https://api.example.com')"],
+    ["Math.random() * 100", "randomNumber()"],
+    ["'Hello, ' + 'World!'", "'HelloWorld()'"],
+    ["[1, 2, 3, 4, 5].reduce((acc, val) => acc + val)", "sumArray([1, 2, 3, 4, 5])"],
+    ["window.innerWidth", "getWindowWidth()"],
+    ["'User Age: ' + 26", "'UserAge(26)'"],
+    ["Math.pow(3, 2)", "power(3, 2)"],
+    ["JSON.stringify({name: 'Item', quantity: 5})", "stringify({name: 'Item', quantity: 5})"],
+    ["console.time('timer'); Math.pow(2, 3); console.timeEnd('timer');", "measureTime(2, 3)"],
+    ["console.dir(['Item', 37], {colors: true})", "displayInfo(['Item', 37])"],
+    ["console.error(new Error('에러 메시지'))", "reportError('에러 메시지')"],
+    ["console.count('counter'); 1 + 2", "countOperation(1, 2)"],
+    ["history.pushState(null, null, 'https://example.com')", "updateHistory('https://example.com')"],
+    ["location.replace('https://example.com')", "replaceLocation('https://example.com')"],
+    ["navigator.userAgent", "getUserAgent()"],
+    ["navigator.geolocation.getCurrentPosition(position => console.log(position))", "getCurrentLocation()"],
+    ["navigator.language", "getLanguage()"],
+    ["navigator.onLine", "checkOnlineStatus()"]
+  ]

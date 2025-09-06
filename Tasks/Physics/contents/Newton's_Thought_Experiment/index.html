@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="playing-bar">
+            <label for="fps" class="playing-labels">FPS</label>
+            <input placeholder="fps" id="fps" class="playing-inputs" min="1" max="1000" type="number" value="50">
+            <label for="meter" class="playing-labels">Size</label>
+            <input placeholder="Size" id="meter" class="playing-inputs" min="50" max="10000" type="number" value="150">
+            <div class="playing-btns" id="reset"><img src="../../images/reset.svg"></div>
+            <div class="playing-btns" id="play"><img src="../../images/play.svg"></div>
+            <div class="playing-btns" id="stop"><img src="../../images/stop.svg"></div>
+            <div class="playing-btns speed">x⅒</div>
+            <div class="playing-btns speed">x¼</div>
+            <div class="playing-btns speed">x½</div>
+            <div class="playing-btns speed">x1</div>
+            <div class="playing-btns speed">x2</div>
+            <div class="playing-btns speed">x5</div>
+            <div class="playing-btns" id="initialize">↻</div>
+            <div id="back-btn">Back</div>
+        </div>
+        <div id="content">
+            <canvas id="canvas" width="1500px" height="1500px" style="width: 500px;"></canvas>
+            <div id="resizer">||</div>
+            <div id="configs" style="width: calc(100vw - 510px);">
+                <section class="converts">
+                    <h1>Planet</h1>
+                    <form onsubmit="return false;">
+                     <label for="planet-radius" title="The Radius of The Planet">Radius</label>
+                     <input type="number" placeholder="2" value="2" id="planet-radius" min="0" max="100" step="0.1" onchange="change(13, this.value);" title="Converts The Radius of The Planet(Default : 2)">
+                     <input type="reset" value="reset" onclick="change(13, 2)" title="Resets The Radius(Default : 2)">
+                     <input type="submit" value="submit" onclick="change(13, document.getElementById('planet-radius').value);" title="The Radius Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="planet-mass" title="The Mass of The Planet">Mass</label>
+                     <input type="number" placeholder="100000000" value="100000000" id="planet-mass" min="0" max="1000000000" onchange="change(14, this.value);" title="Converts The Mass of The Planet(Default : 100000000)">
+                     <input type="reset" value="reset" onclick="change(14, 100000000)" title="Resets The Mass(Default : 100000000)">
+                     <input type="submit" value="submit" onclick="change(14, document.getElementById('planet-mass').value);" title="The Mass Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Satellite</h1>
+                    <form onsubmit="return false;">
+                     <label for="satellite-radius" title="The Radius of The Satellite">Radius</label>
+                     <input type="number" placeholder="0.3" value="0.3" id="satellite-radius" min="0" max="100" step="0.1" onchange="change(15, this.value);" title="Converts The Radius of The Satellite(Default : 0.3)">
+                     <input type="reset" value="reset" onclick="change(15, 0.3)" title="Resets The Radius(Default : 0.3)">
+                     <input type="submit" value="submit" onclick="change(15, document.getElementById('satellite-radius').value);" title="The Radius Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="satellite-mass" title="The Mass of The Satellite">Mass</label>
+                     <input type="number" placeholder="100000" value="100000" id="satellite-mass" min="0" max="1000000000" onchange="change(16, this.value);" title="Converts The Mass of The Satellite(Default : 100000)">
+                     <input type="reset" value="reset" onclick="change(16, 100000)" title="Resets The Mass(Default : 100000)">
+                     <input type="submit" value="submit" onclick="change(16, document.getElementById('satellite-mass').value);" title="The Mass Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="satellite-ix" title="The Initial X-coordinate of The Satellite">Initial X-coordinate</label>
+                     <input type="number" placeholder="0" value="0" id="satellite-ix" min="-100" max="100" step="0.1" onchange="change(17, this.value);" title="Converts The Initial X-coordinate of The Satellite(Default : 0)">
+                     <input type="reset" value="reset" onclick="change(17, 0);" title="Resets The Initial X-coordinate(Default : 0)">
+                     <input type="submit" value="submit" onclick="change(17, document.getElementById('satellite-ix').value);" title="The Initial X-coordinate Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="satellite-iy" title="The Initial Y-coordinate of The Satellite">Initial Y-coordinate</label>
+                     <input type="number" placeholder="3" value="3" id="satellite-iy" min="-100" max="100" step="0.1" onchange="change(18, this.value);" title="Converts The Initial Y-coordinate of The Satellite(Default : 3)">
+                     <input type="reset" value="reset" onclick="change(18, 3);" title="Resets The Initial Y-coordinate(Default : 3)">
+                     <input type="submit" value="submit" onclick="change(18, document.getElementById('satellite-iy').value);" title="The Initial Y-coordinate Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="satellite-hv" title="The Horizontal Velocity of The Satellite">Horizontal Velocity</label>
+                     <input type="number" placeholder="15" value="15" id="satellite-hv" min="-100" max="100" step="0.1" onchange="change(19, this.value)" title="Converts The Horizontal Velocity of The Satellite(Default : 15)">
+                     <input type="reset" value="reset" onclick="change(19, 15);" title="Resets The Horizontal Velocity(Default : 15)">
+                     <input type="submit" value="submit" onclick="change(19, document.getElementById('satellite-hv').value);" title="The Horizontal Velocity Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="satellite-vv" title="The Vertical Velocity of The Satellite">Vertical Velocity</label>
+                     <input type="number" placeholder="0" value="0" id="satellite-vv" min="-100" max="100" step="0.1" onchange="change(20, this.value)" title="Converts The Vertical Velocity of The Satellite(Default : 0)">
+                     <input type="reset" value="reset" onclick="change(20, 0);" title="Resets The Vertical Velocity(Default : 0)">
+                     <input type="submit" value="submit" onclick="change(20, document.getElementById('satellite-vv').value);" title="The Vertical Velocity Conversion Button"><br>
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Results</h1>
+                    <form onsubmit="return false;">
+                     <label title="X-coordinate of The Satellite">X-coordinate</label>
+                     <input type="number" value="0" id="x-coordinate" title="X-coordinate of The Satellite" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Y-coordinate of The Satellite">Y-coordinate</label>
+                     <input type="number" value="3" id="y-coordinate" title="Y-coordinate of The Satellite" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="The Distance between The Planet and The Satellite">Distance</label>
+                     <input type="number" value="0" id="distance" title="The Distance between The Planet and The Satellite" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="The Maximum Distance between The Planet and The Satellite">Maximum Distance</label>
+                     <input type="number" value="0" id="maximum-distance" title="The Maximum Distance between The Planet and The Satellite" disabled>
+                     <input type="reset" value="reset" onclick="maximum = 0;" title="Resets Maximum Distance">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="The Minimum Distance between The Planet and The Satellite">Minimum Distance</label>
+                     <input type="number" value="0" id="minimum-distance" title="The Minimum Distance between The Planet and The Satellite" disabled>
+                     <input type="reset" value="reset" onclick="minimum = Infinity;" title="Resets Minimum Distance">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Horizontal Velocity of The Satellite">Horizontal Velocity</label>
+                     <input type="number" value="0" id="satellite-hvr" title="Horizontal Velocity of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Vertical Velocity of The Satellite">Vertical Velocity</label>
+                     <input type="number" value="0" id="satellite-vvr" title="Vertical Velocity of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Total Velocity of The Satellite">Total Velocity</label>
+                     <input type="number" value="0" id="satellite-tvr" title="Total Velocity of The Marble" disabled>
+                    </form>
+                </section>
+                <canvas id="graph"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../../config.js"></script>
+    <script src="../../resizer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

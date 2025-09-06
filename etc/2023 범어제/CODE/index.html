@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="title" title="2023 범어제" onclick="window.location.href = '../';">
+            <div id="title1" class="title">2</div>
+            <div id="title2" class="title">0</div>
+            <div id="title3" class="title">2</div>
+            <div id="title4" class="title">3</div>
+            <div id="title5" class="title">범어제</div>
+        </div>
+        <div id="entry">
+            <div class="entry" id="log-in" onclick="window.location.href = '../entry/?log-in?CODE';">로그인</div>
+            <div class="entry" id="sign-up" onclick="window.location.href = '../entry/?sign-up?CODE';">회원가입</div>
+        </div>
+        <div id="profile" class="hidden">
+            <div id="name"><!-- 설마 이거 뜯어 본 놈 없지? --></div>
+            <div id="rank"><!-- ...설마 --></div>
+            <div id="point"><!-- 진짜 뜯다가 걸리면... --></div>
+            <div class="entry" id="log-out">로그아웃</div>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title hidden">CODE</h1>
+        <div class="content hidden">
+            <h1 id="chapter">Chapter 01</h1>
+            <div id="code-scores">
+                <h3 id="time">Time 00:00.00</h3>
+                <h3 id="coins">Coins 00</h3>
+            </div>
+            <div id="objects">
+            </div>
+            <h4 id="made-by">Made by. 20529 정의준</h4>
+        </div>
+        <h1 class="main-title">목록</h1>
+        <div id="contents">
+            <div class="contents" id="easy">
+                <h1>EASY MODE</h1>
+                <img src="../images/CODE.jpg">
+                <p>평균 플레이타임 : 20s</p>
+                <p>포인트 : 200 pt</p>
+            </div>
+            <div class="contents" id="hard">
+                <h1>HARD MODE</h1>
+                <img src="../images/CODE.jpg">
+                <p>평균 플레이타임 : 30s</p>
+                <p>포인트 : 500 pt</p>
+            </div>
+            <div class="contents" id="hell">
+                <h1>HELL MODE</h1>
+                <img src="../images/CODE.jpg">
+                <p>평균 플레이타임 : 60s</p>
+                <p>포인트 : 1000 pt</p>
+            </div>
+            <div class="contents" id="speedrun">
+                <h1>SPEEDRUN</h1>
+                <img src="../images/CODE.jpg">
+                <p>무작위 모드를 실행하고 걸린 시간에 반비례하여 포인트를 얻습니다.</p>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </main>
+    <footer>
+        <div id="info">
+            <h1 id="footer-title">CODE</h1>
+            <div id="contact">
+                <p>부장 : 20621 염규원</p>
+                <p>전화 : 010-8680-4037</p>
+            </div>
+        </div>
+        <select id="thema" onchange="darkmode();">
+            <option id="light-mode" selected>밝은 배경</option>
+            <option id="dark-mode">어두운 배경</option>
+            <option id="credit">크레딧</option>
+        </select>
+    </footer>
+    <script>
+        if(window.localStorage.getItem('thema') == null){
+            document.body.dataset.thema = 'light-mode';
+            window.localStorage.setItem('thema', 'light-mode');
+        }else{
+            document.body.dataset.thema = window.localStorage.getItem('thema');
+            if(document.body.dataset.thema == 'dark-mode'){
+                document.getElementById('thema').innerHTML = `<option id="light-mode">밝은 배경</option>
+            <option id="dark-mode" selected>어두운 배경</option>
+            <option id="credit">크레딧</option>`;
+            }
+        }
+        const darkmode = function(){
+            switch(document.getElementById('thema').selectedIndex){
+                case 0:
+                    document.body.dataset.thema = 'light-mode';
+                    window.localStorage.setItem('thema', 'light-mode');
+                    break;
+                case 1:
+                    document.body.dataset.thema = 'dark-mode';
+                    window.localStorage.setItem('thema', 'dark-mode');
+                    break;
+                default:
+                    alert('개발중');
+                    break;
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener("keydown", function(e){
+            if(e.keyCode == 38 || e.keyCode == 40){
+                e.preventDefault();
+            }
+        })
+    </script>
+    <script type="module" src="../main.js"></script>
+    <script src="../sha256.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+        #back-btn {
+            position: fixed;
+            right: 0;
+            background-color: white;
+            border-radius: 0.1em;
+            font-size: 1.4em;
+            height: 1.8em;
+            width: 3.5em;
+            margin: 0 0.2em;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: solid;
+        }
+        #canvas {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="back-btn" onclick="window.location.href = './'">Back</div>
+    <canvas id="canvas" style="overflow: hidden;"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var timer = 0;
+        var text = '1';
+        var texts = [{x : 100, y : 100, width : 0, height : 100, velocity : [-10, 10]}];
+        
+        setInterval(() => {
+            canvas.width = innerWidth;
+            canvas.height = innerHeight;
+
+            if(timer % 100 == 99){
+                texts.push({x : 100, y : 100, width : 0, height : 100, velocity : [-10, 10]});
+            }
+            
+            texts.forEach(a => {
+                ctx.font = "100px serif"
+                ctx.fillStyle = 'black';
+                ctx.textBaseline = 'top'
+                // a.velocity[0] *= [-2, 2/3, 1, 2/3, 2][Math.floor(Math.random() * 4)];
+                // a.velocity[1] *= [-2, -2/3, 1, 2/3, 2][Math.floor(Math.random() * 4)];
+                a.x += a.velocity[0];
+                a.y += a.velocity[1];
+                if(a.x < 0){
+                    a.x = 0;
+                    a.velocity[0] *= [-4, -2, -1, -1/2, -1/4][Math.floor(Math.random() * 4)];
+                    if(a.velocity[0] > 10000) a.velocity[0] = 10;
+                }
+                if(a.y < 0){
+                    a.y = 0;
+                    a.velocity[1] *= [-4, -2, -1, -1/2, -1/4][Math.floor(Math.random() * 4)];
+                    if(a.velocity[1] > 10000) a.velocity[1] = 10;
+                }
+                if(a.x + ctx.measureText(text).width > canvas.width){
+                    a.x = canvas.width - ctx.measureText(text).width;
+                    a.velocity[0] *= [-4, -2, -1, -1/2, -1/4][Math.floor(Math.random() * 4)];
+                    if(a.velocity[0] < 10000) a.velocity[0] = -10;
+                }
+                if(a.y + 100 > canvas.height){
+                    a.y = canvas.height - 100;
+                    a.velocity[1] *= [-4, -2, -1, -1/2, -1/4][Math.floor(Math.random() * 4)];
+                    if(a.velocity[1] < 10000) a.velocity[1] = -10;
+                }
+                ctx.fillText(text, a.x, a.y);
+            })
+            timer += 1;
+        }, 20);
+
+        window.onload = function(){
+            text = decodeURI(window.location.search.substr(1))
+        }
+    </script>
+</body>
+</html>

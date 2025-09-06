@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="title" title="2023 범어제" onclick="window.location.href = '../';">
+            <div id="title1" class="title">2</div>
+            <div id="title2" class="title">0</div>
+            <div id="title3" class="title">2</div>
+            <div id="title4" class="title">3</div>
+            <div id="title5" class="title">범어제</div>
+        </div>
+        <div id="entry">
+            <div class="entry" id="log-in">로그인</div>
+            <div class="entry" id="sign-up">회원가입</div>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title">Key-Down</h1>
+        <div class="content">
+            <h1 class="neon">아래의 문구를 반대로 입력해주세요.</h1>
+            <div id="exam" class="inverse unselectable neon D2Coding"></div>
+            <textarea id="area"></textarea>
+            <!-- <textarea id="Key-Down-input" type="text" class="neon D2Coding"> -->
+            <div id="times">
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+                <div class="status-box"><div></div></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="info">
+            <h1 id="footer-title">Sirus903</h1>
+            <div id="contact">
+                <p>제작자 : 20621 염규원</p>
+                <p>전화 : 010-8680-4037</p>
+                <p>이메일 : sirius4037@gmail.com</p>
+            </div>
+        </div>
+        <select id="thema" onchange="darkmode();">
+            <option id="light-mode" selected>밝은 배경</option>
+            <option id="dark-mode">어두운 배경</option>
+            <option id="credit">크레딧</option>
+        </select>
+    </footer>
+    <script>
+        if(window.localStorage.getItem('thema') == null){
+            document.body.dataset.thema = 'light-mode';
+            window.localStorage.setItem('thema', 'light-mode');
+        }else{
+            document.body.dataset.thema = window.localStorage.getItem('thema');
+            if(document.body.dataset.thema == 'dark-mode'){
+                document.getElementById('thema').innerHTML = `<option id="light-mode">밝은 배경</option>
+            <option id="dark-mode" selected>어두운 배경</option>
+            <option id="credit">크레딧</option>`;
+            }
+        }
+        const darkmode = function(){
+            switch(document.getElementById('thema').selectedIndex){
+                case 0:
+                    document.body.dataset.thema = 'light-mode';
+                    window.localStorage.setItem('thema', 'light-mode');
+                    break;
+                case 1:
+                    document.body.dataset.thema = 'dark-mode';
+                    window.localStorage.setItem('thema', 'dark-mode');
+                    break;
+                default:
+                    alert('개발중');
+                    break;
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+[
+    {
+      "key": "UNITS_MARINE",
+      "original": "Marine",
+      "translation": "해병대",
+      "context": ""
+    },{
+      "key": "UNITS_PRIVATEER",
+      "original": "Privateer",
+      "translation": "사략선",
+      "context": ""
+    },{
+      "key": "UNITS_HUSSAR",
+      "original": "Hussar",
+      "translation": "후사르",
+      "context": ""
+    },{
+      "key": "UNITS_SUBMARINE",
+      "original": "Submarine",
+      "translation": "잠수함",
+      "context": ""
+    },{
+      "key": "UNITS_BOMBER",
+      "original": "Bomber",
+      "translation": "폭격기",
+      "context": ""
+    },{
+      "key": "UNITS_FIGHTER",
+      "original": "Fighter",
+      "translation": "전투기",
+      "context": ""
+    },{
+      "key": "UNITS_HAKKAPELIITTA",
+      "original": "Hakkapeliitta",
+      "translation": "하카펠리타",
+      "context": ""
+    },{
+      "key": "UNITS_RIFLEMAN",
+      "original": "Rifleman",
+      "translation": "소총병",
+      "context": ""
+    }
+]

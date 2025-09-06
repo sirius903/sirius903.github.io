@@ -1,0 +1,423 @@
+[
+    {
+      "key": "POLICIES_ARISTOCRACY",
+      "original": "Aristocracy",
+      "translation": "관료제",
+      "context": ""
+    },{
+      "key": "POLICIES_LEGALISM",
+      "original": "Legalism",
+      "translation": "율법 정치",
+      "context": ""
+    },{
+      "key": "POLICIES_OLIGARCHY",
+      "original": "Oligarchy",
+      "translation": "과두제",
+      "context": ""
+    },{
+      "key": "POLICIES_LANDED-ELITE",
+      "original": "Landed Elite",
+      "translation": "대지주",
+      "context": ""
+    },{
+      "key": "POLICIES_MONARCHY",
+      "original": "Monarchy",
+      "translation": "군주제",
+      "context": ""
+    },{
+      "key": "POLICIES_TRADITION-COMPLETE",
+      "original": "Tradition Complete",
+      "translation": "전통 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_TRADITION",
+      "original": "Tradition",
+      "translation": "전통",
+      "context": ""
+    },{
+      "key": "POLICIES_COLLECTIVE-RULE",
+      "original": "Collective Rule",
+      "translation": "집단체제",
+      "context": ""
+    },{
+      "key": "POLICIES_CITIZENSHIP",
+      "original": "Citizenship",
+      "translation": "시민권",
+      "context": ""
+    },{
+      "key": "POLICIES_REPUBLIC",
+      "original": "Republic",
+      "translation": "공화국",
+      "context": ""
+    },{
+      "key": "POLICIES_REPRESENTATION",
+      "original": "Representation",
+      "translation": "대의제",
+      "context": ""
+    },{
+      "key": "POLICIES_MERITOCRACY",
+      "original": "Meritocracy",
+      "translation": "능력주의",
+      "context": ""
+    },{
+      "key": "POLICIES_LIBERTY-COMPLETE",
+      "original": "Liberty Complete",
+      "translation": "자유 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_LIBERTY",
+      "original": "Liberty",
+      "translation": "자유",
+      "context": ""
+    },{
+      "key": "POLICIES_WARRIOR-CODE",
+      "original": "Warrior Code",
+      "translation": "전사규범",
+      "context": ""
+    },{
+      "key": "POLICIES_DISCIPLINE",
+      "original": "Discipline",
+      "translation": "규율",
+      "context": ""
+    },{
+      "key": "POLICIES_MILITARY-TRADITION",
+      "original": "Military Tradition",
+      "translation": "군사 전통",
+      "context": ""
+    },{
+      "key": "POLICIES_MILITARY-CASTE",
+      "original": "Military Caste",
+      "translation": "군사신분제",
+      "context": ""
+    },{
+      "key": "POLICIES_PROFESSIONAL-ARMY",
+      "original": "Professional Army",
+      "translation": "직업 군대",
+      "context": ""
+    },{
+      "key": "POLICIES_HONOR-COMPLETE",
+      "original": "Honor Complete",
+      "translation": "명예 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_HONOR",
+      "original": "Honor",
+      "translation": "명예",
+      "context": ""
+    },{
+      "key": "POLICIES_ORGANIZED-RELIGION",
+      "original": "Organized Religion",
+      "translation": "종교 체제",
+      "context": ""
+    },{
+      "key": "POLICIES_MANDATE-OF-HEAVEN",
+      "original": "Mandate Of Heaven",
+      "translation": "천명",
+      "context": ""
+    },{
+      "key": "POLICIES_THEOCRACY",
+      "original": "Theocracy",
+      "translation": "신권 정치",
+      "context": ""
+    },{
+      "key": "POLICIES_REFORMATION",
+      "original": "Reformation",
+      "translation": "종교 개혁",
+      "context": ""
+    },{
+      "key": "POLICIES_FREE-RELIGION",
+      "original": "Free Religion",
+      "translation": "종교적 관용",
+      "context": ""
+    },{
+      "key": "POLICIES_PIETY-COMPLETE",
+      "original": "Piety Complete",
+      "translation": "신앙 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_PIETY",
+      "original": "Piety",
+      "translation": "신앙",
+      "context": ""
+    },{
+      "key": "POLICIES_PHILANTROPY",
+      "original": "Philantropy",
+      "translation": "박애주의",
+      "context": ""
+    },{
+      "key": "POLICIES_AESTHETICS",
+      "original": "Aesthetics",
+      "translation": "미학",
+      "context": ""
+    },{
+      "key": "POLICIES_SCHOLASTICISM",
+      "original": "Scholasticism",
+      "translation": "스콜라 철학",
+      "context": ""
+    },{
+      "key": "POLICIES_CULTURAL-DIPLOMACY",
+      "original": "Cultural Diplomacy",
+      "translation": "문화 외교",
+      "context": ""
+    },{
+      "key": "POLICIES_EDUCATED-ELITE",
+      "original": "Educated Elite",
+      "translation": "지식인",
+      "context": ""
+    },{
+      "key": "POLICIES_PATRONAGE-COMPLETE",
+      "original": "Patronage Complete",
+      "translation": "후원 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_PATRONAGE",
+      "original": "Patronage",
+      "translation": "후원",
+      "context": ""
+    },{
+      "key": "POLICIES_NAVAL-TRADITION",
+      "original": "Naval Tradition",
+      "translation": "해안 전통",
+      "context": ""
+    },{
+      "key": "POLICIES_TRADE-UNIONS",
+      "original": "Trade Unions",
+      "translation": "노동 조합",
+      "context": ""
+    },{
+      "key": "POLICIES_MERCHANT-NAVY",
+      "original": "Merchant Navy",
+      "translation": "상선대",
+      "context": ""
+    },{
+      "key": "POLICIES_MERCANTILISM",
+      "original": "Mercantilism",
+      "translation": "중상주의",
+      "context": ""
+    },{
+      "key": "POLICIES_PROTECTIONISM",
+      "original": "Protectionism",
+      "translation": "보호무역주의",
+      "context": ""
+    },{
+      "key": "POLICIES_COMMERCE-COMPLETE",
+      "original": "Commerce Complete",
+      "translation": "상업 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_COMMERCE",
+      "original": "Commerce",
+      "translation": "상업",
+      "context": ""
+    },{
+      "key": "POLICIES_SECULARISM",
+      "original": "Secularism",
+      "translation": "세속주의",
+      "context": ""
+    },{
+      "key": "POLICIES_HUMANISM",
+      "original": "Humanism",
+      "translation": "인본주의",
+      "context": ""
+    },{
+      "key": "POLICIES_FREE-THOUGHT",
+      "original": "Free Thought",
+      "translation": "자유사상",
+      "context": ""
+    },{
+      "key": "POLICIES_SOVEREIGNTY",
+      "original": "Sovereignty",
+      "translation": "국민주권",
+      "context": ""
+    },{
+      "key": "POLICIES_SCIENTIFIC-REVOLUTION",
+      "original": "Scientific Revolution",
+      "translation": "과학 혁명",
+      "context": ""
+    },{
+      "key": "POLICIES_RATIONALISM-COMPLETE",
+      "original": "Rationalism Complete",
+      "translation": "합리 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_RATIONALISM",
+      "original": "Rationalism",
+      "translation": "합리",
+      "context": ""
+    },{
+      "key": "POLICIES_CONSTITUTION",
+      "original": "Constitution",
+      "translation": "헌법",
+      "context": ""
+    },{
+      "key": "POLICIES_UNIVERSAL-SUFFRAGE",
+      "original": "Universal Suffrage",
+      "translation": "보통선거제도",
+      "context": ""
+    },{
+      "key": "POLICIES_CIVIL-SOCIETY",
+      "original": "Civil Society",
+      "translation": "시민 사회",
+      "context": ""
+    },{
+      "key": "POLICIES_FREE-SPEECH",
+      "original": "Free Speech",
+      "translation": "표현의 자유",
+      "context": ""
+    },{
+      "key": "POLICIES_DEMOCRACY",
+      "original": "Democracy",
+      "translation": "민주주의",
+      "context": ""
+    },{
+      "key": "POLICIES_FREEDOM-COMPLETE",
+      "original": "Freedom Complete",
+      "translation": "평등 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_FREEDOM",
+      "original": "Freedom",
+      "translation": "평등",
+      "context": ""
+    },{
+      "key": "POLICIES_POPULISM",
+      "original": "Populism",
+      "translation": "포퓰리즘",
+      "context": ""
+    },{
+      "key": "POLICIES_MILITARISM",
+      "original": "Militarism",
+      "translation": "군국주의",
+      "context": ""
+    },{
+      "key": "POLICIES_FASCISM",
+      "original": "Fascism",
+      "translation": "파시즘",
+      "context": ""
+    },{
+      "key": "POLICIES_POLICE-STATE",
+      "original": "Police State",
+      "translation": "경찰국가",
+      "context": ""
+    },{
+      "key": "POLICIES_TOTAL-WAR",
+      "original": "Total War",
+      "translation": "총력전",
+      "context": ""
+    },{
+      "key": "POLICIES_AUTOCRACY-COMPLETE",
+      "original": "Autocracy Complete",
+      "translation": "독재 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_AUTOCRACY",
+      "original": "Autocracy",
+      "translation": "독재",
+      "context": ""
+    },{
+      "key": "POLICIES_UNITED-FRONT",
+      "original": "United Front",
+      "translation": "통일 전선",
+      "context": ""
+    },{
+      "key": "POLICIES_PLANNED-ECONOMY",
+      "original": "Planned Economy",
+      "translation": "계획 경제",
+      "context": ""
+    },{
+      "key": "POLICIES_NATIONALISM",
+      "original": "Nationalism",
+      "translation": "민족주의",
+      "context": ""
+    },{
+      "key": "POLICIES_SOCIALISM",
+      "original": "Socialism",
+      "translation": "사회주의",
+      "context": ""
+    },{
+      "key": "POLICIES_COMMUNISM",
+      "original": "Communism",
+      "translation": "공산주의",
+      "context": ""
+    },{
+      "key": "POLICIES_ORDER-COMPLETE",
+      "original": "Order Complete",
+      "translation": "질서 완성",
+      "context": ""
+    },{
+      "key": "POLICIES_ORDER",
+      "original": "Order",
+      "translation": "질서",
+      "context": ""
+    },{
+      "key": "POLICIES_ADOPT",
+      "original": "Adopt",
+      "translation": "채택",
+      "context": ""
+    },{
+      "key": "POLICIES_COMPLETED",
+      "original": "Completed",
+      "translation": "완성함",
+      "context": ""
+    },{
+      "key": "POLICIES_ON-ADOPTION",
+      "original": "On adoption",
+      "translation": "채택 시",
+      "context": ""
+    },{
+      "key": "POLICIES_ON-COMPLETION",
+      "original": "On completion",
+      "translation": "완성 시",
+      "context": ""
+    },{
+      "key": "POLICIES_CANNOT-BE-ADOPTED-TOGETHER-WITH",
+      "original": "Cannot be adopted together with",
+      "translation": "동시 채택 불가: ",
+      "context": ""
+    },{
+      "key": "POLICIES_CANNOT-BE-ADOPTED-BEFORE",
+      "original": "Cannot be adopted before",
+      "translation": "선행조건: ",
+      "context": ""
+    },{
+      "key": "POLICIES_ADOPT-POLICY",
+      "original": "Adopt policy",
+      "translation": "정책 채택",
+      "context": ""
+    },{
+      "key": "POLICIES_ADOPT-FREE-POLICY",
+      "original": "Adopt free policy",
+      "translation": "무료 정책 채택",
+      "context": ""
+    },{
+      "key": "POLICIES_UNLOCKED-AT",
+      "original": "Unlocked at",
+      "translation": "등장 시대:",
+      "context": ""
+    },{
+      "key": "POLICIES_GAIN-2-FREE-TECHNOLOGIES",
+      "original": "Gain 2 free technologies",
+      "translation": "무료 기술 2개 획득",
+      "context": ""
+    },{
+      "key": "POLICIES_ALL-POLICIES-ADOPTED",
+      "original": "All policies adopted",
+      "translation": "모든 정책 채택됨",
+      "context": ""
+    },{
+      "key": "POLICIES_[BRANCHNAME]-BRANCH",
+      "original": "[branchName] branch",
+      "translation": "[branchName] 트리",
+      "context": ""
+    },{
+      "key": "POLICIES_POLICY-BRANCH:-[BRANCHNAME]",
+      "original": "Policy branch: [branchName]",
+      "translation": "정책 트리: [branchName]",
+      "context": ""
+    },{
+      "key": "POLICIES_ARE-YOU-SURE-YOU-WANT-TO-ADOPT-[BRANCHNAME]?",
+      "original": "Are you sure you want to adopt [branchName]?",
+      "translation": "[branchName] 정책을 정말 채택하겠습니까?",
+      "context": ""
+    }
+]

@@ -1,0 +1,493 @@
+[
+    {
+      "key": "PROMOTIONS_SWORD",
+      "original": "Sword",
+      "translation": "근접 냉병기",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MOUNTED",
+      "original": "Mounted",
+      "translation": "기마",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SIEGE",
+      "original": "Siege",
+      "translation": "공성",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_RANGED-GUNPOWDER",
+      "original": "Ranged Gunpowder",
+      "translation": "원거리 화약",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ARMORED",
+      "original": "Armored",
+      "translation": "기갑",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MELEE-WATER",
+      "original": "Melee Water",
+      "translation": "해상 근접",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_RANGED-WATER",
+      "original": "Ranged Water",
+      "translation": "해상 원거리",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_HEAL-INSTANTLY",
+      "original": "Heal Instantly",
+      "translation": "즉시 회복",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ACCURACY-I",
+      "original": "Accuracy I",
+      "translation": "정확도 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ACCURACY-II",
+      "original": "Accuracy II",
+      "translation": "정확도 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ACCURACY-III",
+      "original": "Accuracy III",
+      "translation": "정확도 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BARRAGE-I",
+      "original": "Barrage I",
+      "translation": "탄막 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BARRAGE-II",
+      "original": "Barrage II",
+      "translation": "탄막 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BARRAGE-III",
+      "original": "Barrage III",
+      "translation": "탄막 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_VOLLEY",
+      "original": "Volley",
+      "translation": "일제 사격",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_EXTENDED-RANGE",
+      "original": "Extended Range",
+      "translation": "범위 확장",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_INDIRECT-FIRE",
+      "original": "Indirect Fire",
+      "translation": "간접 사격",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SHOCK-I",
+      "original": "Shock I",
+      "translation": "충격 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SHOCK-II",
+      "original": "Shock II",
+      "translation": "충격 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SHOCK-III",
+      "original": "Shock III",
+      "translation": "충격 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_DRILL-I",
+      "original": "Drill I",
+      "translation": "훈련 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_DRILL-II",
+      "original": "Drill II",
+      "translation": "훈련 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_DRILL-III",
+      "original": "Drill III",
+      "translation": "훈련 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_CHARGE",
+      "original": "Charge",
+      "translation": "돌격",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BESIEGE",
+      "original": "Besiege",
+      "translation": "공성",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_FORMATION-I",
+      "original": "Formation I",
+      "translation": "진형 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_FORMATION-II",
+      "original": "Formation II",
+      "translation": "진형 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BLITZ",
+      "original": "Blitz",
+      "translation": "전격전",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_WOODSMAN",
+      "original": "Woodsman",
+      "translation": "벌목꾼",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MEDIC",
+      "original": "Medic",
+      "translation": "의무병 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MEDIC-II",
+      "original": "Medic II",
+      "translation": "의무병 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SCOUTING-I",
+      "original": "Scouting I",
+      "translation": "정찰 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SCOUTING-II",
+      "original": "Scouting II",
+      "translation": "정찰 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SCOUTING-III",
+      "original": "Scouting III",
+      "translation": "정찰 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SURVIVALISM-I",
+      "original": "Survivalism I",
+      "translation": "생존 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SURVIVALISM-II",
+      "original": "Survivalism II",
+      "translation": "생존 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SURVIVALISM-III",
+      "original": "Survivalism III",
+      "translation": "생존 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOARDING-PARTY-I",
+      "original": "Boarding Party I",
+      "translation": "선박 침투조 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOARDING-PARTY-II",
+      "original": "Boarding Party II",
+      "translation": "선박 침투조 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOARDING-PARTY-III",
+      "original": "Boarding Party III",
+      "translation": "선박 침투조 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_COASTAL-RAIDER-I",
+      "original": "Coastal Raider I",
+      "translation": "해안 강습 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_COASTAL-RAIDER-II",
+      "original": "Coastal Raider II",
+      "translation": "해안 강습 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_COASTAL-RAIDER-III",
+      "original": "Coastal Raider III",
+      "translation": "해안 강습 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_LANDING-PARTY",
+      "original": "Landing Party",
+      "translation": "상륙 부대",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_TARGETING-I",
+      "original": "Targeting I",
+      "translation": "표적 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_TARGETING-II",
+      "original": "Targeting II",
+      "translation": "표적 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_TARGETING-III",
+      "original": "Targeting III",
+      "translation": "표적 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_WOLFPACK-I",
+      "original": "Wolfpack I",
+      "translation": "집단공격 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_WOLFPACK-II",
+      "original": "Wolfpack II",
+      "translation": "집단공격 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_WOLFPACK-III",
+      "original": "Wolfpack III",
+      "translation": "집단공격 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AIRCRAFT-CARRIER",
+      "original": "Aircraft Carrier",
+      "translation": "항공모함",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ARMOR-PLATING-I",
+      "original": "Armor Plating I",
+      "translation": "장갑 강화 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ARMOR-PLATING-II",
+      "original": "Armor Plating II",
+      "translation": "장갑 강화 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ARMOR-PLATING-III",
+      "original": "Armor Plating III",
+      "translation": "장갑 강화 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_FLIGHT-DECK-I",
+      "original": "Flight Deck I",
+      "translation": "비행 갑판 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_FLIGHT-DECK-II",
+      "original": "Flight Deck II",
+      "translation": "비행 갑판 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_FLIGHT-DECK-III",
+      "original": "Flight Deck III",
+      "translation": "비행 갑판 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SUPPLY",
+      "original": "Supply",
+      "translation": "보급",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SIEGE-I",
+      "original": "Siege I",
+      "translation": "공성 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SIEGE-II",
+      "original": "Siege II",
+      "translation": "공성 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SIEGE-III",
+      "original": "Siege III",
+      "translation": "공성 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_EVASION",
+      "original": "Evasion",
+      "translation": "회피",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_INTERCEPTION-I",
+      "original": "Interception I",
+      "translation": "요격 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_INTERCEPTION-II",
+      "original": "Interception II",
+      "translation": "요격 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_INTERCEPTION-III",
+      "original": "Interception III",
+      "translation": "요격 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AIR-TARGETING-I",
+      "original": "Air Targeting I",
+      "translation": "공중 목표 설정 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AIR-TARGETING-II",
+      "original": "Air Targeting II",
+      "translation": "공중 목표 설정 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SORTIE",
+      "original": "Sortie",
+      "translation": "출격",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_OPERATIONAL-RANGE",
+      "original": "Operational Range",
+      "translation": "작전 범위 증가",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_HELICOPTER",
+      "original": "Helicopter",
+      "translation": "헬리콥터",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AIR-REPAIR",
+      "original": "Air Repair",
+      "translation": "공중 수리",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MOBILITY-I",
+      "original": "Mobility I",
+      "translation": "기동력 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MOBILITY-II",
+      "original": "Mobility II",
+      "translation": "기동력 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ANTI-ARMOR-I",
+      "original": "Anti-Armor I",
+      "translation": "매복 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_ANTI-ARMOR-II",
+      "original": "Anti-Armor II",
+      "translation": "매복 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_COVER-I",
+      "original": "Cover I",
+      "translation": "엄폐 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_COVER-II",
+      "original": "Cover II",
+      "translation": "엄폐 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MARCH",
+      "original": "March",
+      "translation": "행군",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MOBILITY",
+      "original": "Mobility",
+      "translation": "기동력",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SENTRY",
+      "original": "Sentry",
+      "translation": "감시",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_LOGISTICS",
+      "original": "Logistics",
+      "translation": "병참 지원",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AMBUSH-I",
+      "original": "Ambush I",
+      "translation": "매복 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_AMBUSH-II",
+      "original": "Ambush II",
+      "translation": "매복 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOMBARDMENT-I",
+      "original": "Bombardment I",
+      "translation": "폭격 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOMBARDMENT-II",
+      "original": "Bombardment II",
+      "translation": "폭격 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_BOMBARDMENT-III",
+      "original": "Bombardment III",
+      "translation": "폭격 III",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_MORALE",
+      "original": "Morale",
+      "translation": "사기",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_GREAT-GENERALS-I",
+      "original": "Great Generals I",
+      "translation": "위대한 장군 I",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_GREAT-GENERALS-II",
+      "original": "Great Generals II",
+      "translation": "위대한 장군 II",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_QUICK-STUDY",
+      "original": "Quick Study",
+      "translation": "빠른 연구",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_HAKA-WAR-DANCE",
+      "original": "Haka War Dance",
+      "translation": "하카 전쟁 의식",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_REJUVENATION",
+      "original": "Rejuvenation",
+      "translation": "젊음",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_SLINGER-WITHDRAW",
+      "original": "Slinger Withdraw",
+      "translation": "투석병 철수",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_IGNORE-TERRAIN-COST",
+      "original": "Ignore terrain cost",
+      "translation": "지형 무시",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_PICTISH-COURAGE",
+      "original": "Pictish Courage",
+      "translation": "용맹한 픽트족",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_HOME-SWEET-HOME",
+      "original": "Home Sweet Home",
+      "translation": "즐거운 우리집",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_[UNIT]-ABILITY",
+      "original": "[unit] ability",
+      "translation": "[unit] 특성",
+      "context": ""
+    },{
+      "key": "PROMOTIONS_DEVOUT",
+      "original": "Devout",
+      "translation": "",
+      "context": ""
+    }
+]

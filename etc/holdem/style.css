@@ -1,0 +1,40 @@
+#login {
+    display: flex;
+    align-items: center;
+}
+
+#id {
+    margin: 0.2em 0.5em 0.3em;
+}
+
+#id-input {
+    padding: 0.2em 0.3em 0.1em;
+    width: 20em;
+}
+
+#login-btn {
+    margin: 0.2em 0.5em 0.3em;
+    padding: 0.1em 0.3em 0.2em;
+    border: solid black;
+    border-radius: 5px;
+    transition: all 300ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+#login-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#warn {
+    color: red;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: 2em;
+}
+
+.deck {
+    display: flex;
+    align-items: center;
+}

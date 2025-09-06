@@ -1,0 +1,63 @@
+.status-box {
+    clip-path: polygon(
+        0 0,
+        0% 100%,
+        100% 100%,
+        100% 0%,
+        5% 0%,
+        5% 5%,
+        95% 5%,
+        95% 95%,
+        5% 95%,
+        5% 0%
+      );
+}
+
+#timer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.timer {
+    height: 100%;
+    width: 100%;
+    background-color: #2baaff;
+    clip-path: polygon(50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 50%);
+    animation-name: timerAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes timerAnimation {
+    0% {
+      clip-path: polygon(50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 50%);
+    }
+    12.5% {
+      clip-path: polygon(50% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 50% 50%);
+    }
+    37.5% {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
+    }
+    62.5% {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 100%, 0 100%, 50% 50%);
+    }
+    87.5% {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 0 0, 50% 50%);
+    }
+    100% {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0, 50% 50%);
+    }
+}
+.clear {
+  background-color: #0fbd27;
+  height: 100%;
+  width: 100%;
+}
+.out {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}

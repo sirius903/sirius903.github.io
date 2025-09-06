@@ -1,0 +1,178 @@
+[
+    {
+      "key": "RESOURCES_CATTLE",
+      "original": "Cattle",
+      "translation": "소",
+      "context": ""
+    },{
+      "key": "RESOURCES_SHEEP",
+      "original": "Sheep",
+      "translation": "양",
+      "context": ""
+    },{
+      "key": "RESOURCES_DEER",
+      "original": "Deer",
+      "translation": "사슴",
+      "context": ""
+    },{
+      "key": "RESOURCES_BANANAS",
+      "original": "Bananas",
+      "translation": "바나나",
+      "context": ""
+    },{
+      "key": "RESOURCES_WHEAT",
+      "original": "Wheat",
+      "translation": "밀",
+      "context": ""
+    },{
+      "key": "RESOURCES_STONE",
+      "original": "Stone",
+      "translation": "석재",
+      "context": ""
+    },{
+      "key": "RESOURCES_FISH",
+      "original": "Fish",
+      "translation": "생선",
+      "context": ""
+    },{
+      "key": "RESOURCES_HORSES",
+      "original": "Horses",
+      "translation": "말",
+      "context": ""
+    },{
+      "key": "RESOURCES_IRON",
+      "original": "Iron",
+      "translation": "철",
+      "context": ""
+    },{
+      "key": "RESOURCES_COAL",
+      "original": "Coal",
+      "translation": "석탄",
+      "context": ""
+    },{
+      "key": "RESOURCES_OIL",
+      "original": "Oil",
+      "translation": "석유",
+      "context": ""
+    },{
+      "key": "RESOURCES_ALUMINUM",
+      "original": "Aluminum",
+      "translation": "알루미늄",
+      "context": ""
+    },{
+      "key": "RESOURCES_URANIUM",
+      "original": "Uranium",
+      "translation": "우라늄",
+      "context": ""
+    },{
+      "key": "RESOURCES_FURS",
+      "original": "Furs",
+      "translation": "모피",
+      "context": ""
+    },{
+      "key": "RESOURCES_COTTON",
+      "original": "Cotton",
+      "translation": "목화",
+      "context": ""
+    },{
+      "key": "RESOURCES_DYES",
+      "original": "Dyes",
+      "translation": "염료",
+      "context": ""
+    },{
+      "key": "RESOURCES_GEMS",
+      "original": "Gems",
+      "translation": "보석",
+      "context": ""
+    },{
+      "key": "RESOURCES_GOLD-ORE",
+      "original": "Gold Ore",
+      "translation": "금",
+      "context": ""
+    },{
+      "key": "RESOURCES_SILVER",
+      "original": "Silver",
+      "translation": "은",
+      "context": ""
+    },{
+      "key": "RESOURCES_INCENSE",
+      "original": "Incense",
+      "translation": "향",
+      "context": ""
+    },{
+      "key": "RESOURCES_IVORY",
+      "original": "Ivory",
+      "translation": "상아",
+      "context": ""
+    },{
+      "key": "RESOURCES_SILK",
+      "original": "Silk",
+      "translation": "비단",
+      "context": ""
+    },{
+      "key": "RESOURCES_SPICES",
+      "original": "Spices",
+      "translation": "향신료",
+      "context": ""
+    },{
+      "key": "RESOURCES_WINE",
+      "original": "Wine",
+      "translation": "와인",
+      "context": ""
+    },{
+      "key": "RESOURCES_SUGAR",
+      "original": "Sugar",
+      "translation": "설탕",
+      "context": ""
+    },{
+      "key": "RESOURCES_MARBLE",
+      "original": "Marble",
+      "translation": "대리석",
+      "context": ""
+    },{
+      "key": "RESOURCES_WHALES",
+      "original": "Whales",
+      "translation": "고래",
+      "context": ""
+    },{
+      "key": "RESOURCES_PEARLS",
+      "original": "Pearls",
+      "translation": "진주",
+      "context": ""
+    },{
+      "key": "RESOURCES_JEWELRY",
+      "original": "Jewelry",
+      "translation": "장신구",
+      "context": ""
+    },{
+      "key": "RESOURCES_PORCELAIN",
+      "original": "Porcelain",
+      "translation": "도자기",
+      "context": ""
+    },{
+      "key": "RESOURCES_CITRUS",
+      "original": "Citrus",
+      "translation": "감귤",
+      "context": ""
+    },{
+      "key": "RESOURCES_COPPER",
+      "original": "Copper",
+      "translation": "구리",
+      "context": ""
+    },{
+      "key": "RESOURCES_CRAB",
+      "original": "Crab",
+      "translation": "게",
+      "context": ""
+    },{
+      "key": "RESOURCES_SALT",
+      "original": "Salt",
+      "translation": "소금",
+      "context": ""
+    },{
+      "key": "RESOURCES_TRUFFLES",
+      "original": "Truffles",
+      "translation": "송로버섯",
+      "context": ""
+    }
+  ]

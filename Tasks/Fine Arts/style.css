@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KimjungchulScript-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #00040f;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    overflow-x: hidden;
+}
+
+#title {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 1s all;
+}
+
+#title.move {
+    cursor: default;
+}
+
+.title {
+    color: #41a9ff;
+    font-family: 'intelone-mono-font-family-regular';
+    font-weight: 700;
+    font-size: 5.5em;
+    transition: 1s all;
+}
+
+#title:hover #title1 {
+    margin-right: 1em;
+}
+
+#title.move #title1 {
+    margin-right: 110vw;
+}
+
+
+header {
+    display: flex;
+    transition: transform 500ms;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+header.move {
+    transform: translate(0, -100%);
+}
+
+header .title {
+    margin-left: 0.4em;
+}
+
+#logo {
+    position: fixed;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    width: 10em;
+    height: 10em;
+    transition: transform 800ms;
+    cursor: pointer;
+}
+
+#logo.move {
+    transform: translate(50%, 100vh);
+}
+
+#logo:hover {
+    transform: scale(1.2) translate(50%, 50%);
+}
+
+#logo.fixed {
+    right: 1rem;
+    top: 1rem;
+    transform: translate(0);
+    cursor: default;
+}
+
+#logo.fixed:hover {
+    transform: scale(1);
+}
+
+#title.hidden {
+    display: none;
+}
+
+#web {
+    display: flex;
+    color: #41a9ff;
+    transition: transform 1.5s;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#WEB {
+    font-size: 10em;
+    font-weight: 1000;
+    transition: 1000ms;
+}
+
+#site {
+    font-family: 'KimjungchulScript-Bold';
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 0.3em #41a9ff, 0 0 0.1em #41a9ff;
+    transition: 1000ms;
+}
+
+#js {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #41a9ff;
+    color: #00040f;
+    font-size: 6em;
+    user-select: none;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#web.move {
+    transform: translate(-100%, 0);
+}
+
+.fixed #WEB {
+    transform: rotate(-0.25turn);
+    width: 1.2em;
+    margin-top: 1em;
+}
+
+.fixed #group #site {
+    transform: rotate(-0.25turn);
+    height: 2.5em;
+    width: 2em;
+    margin-top: 0;
+}
+
+#group {
+    display: flex;
+}
+
+#group.fixed {
+    flex-direction: column;
+}
+
+#beomeo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 2em;
+    transition: 1000ms;
+}
+
+#beomeo.move {
+    transform: translate(0, -50vw);
+}
+
+#img {
+    width: 40vw;
+    height: 20vw;
+    border-radius: 3px;
+}
+
+#game {
+    margin-top: 5em;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    transition: 1000ms;
+}
+
+#GAME {
+    font-size: 6em;
+    font-weight: 1000;
+}
+
+#g-group {
+    display: flex;
+}
+
+#game1 {
+    font-size: 10em;
+}
+
+#card {
+    font-size: 10em;
+}
+
+#game.move {
+    transform: translate(50vw, 0);
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    transition: 1000ms;
+}
+
+#icon {
+    margin-left: 1em;
+    color: white;
+    text-shadow: 0 0 0.3em #41a9ff, 0 0 0.1em #41a9ff;
+    font-size: 2.5em;
+}
+
+footer .title {
+    margin-right: 0.5em;
+}
+
+#desktop {
+    color: white;
+    text-shadow: 0 0 0.3em #41a9ff, 0 0 0.1em #41a9ff;
+}
+
+footer.move {
+    transform: translate(0, 50vh);
+}
+
+a {
+    color: #41a9ff;
+    margin-top: 1em;
+}
+
+a:hover {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

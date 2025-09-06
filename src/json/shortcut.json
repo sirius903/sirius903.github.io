@@ -1,0 +1,15 @@
+{
+  "e" : [
+    {
+      "title" : "GitHub",
+      "src" : "https://github.com/sirius903",
+      "img" : "src/images/github.svg"
+    },
+    {
+      "title" : "YouTube",
+      "src" : "https://www.youtube.com/@sirius903",
+      "img" : "src/images/youtube.svg"
+    }
+  ],
+  "i" : []
+}

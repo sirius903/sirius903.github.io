@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+textarea {
+    font-family: 'D2Coding';
+    font-weight: 100;
+    width: 80%;
+    height: 10em;
+    padding: 3px 5px 2px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: scroll;
+}
+
+#ver {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    background-color: #e8e8e870;
+}
+
+.btn {
+    border: solid black 1px;
+    padding: 0.05em 0.5em 0.1em;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 300ms;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #f8f8f8;
+}
+
+#cancel:hover {
+    background-color: #ffeded;
+}
+
+#btns .btn {
+    width: 15em;
+    text-align: center;
+}
+
+#loading.a1.a2 {
+    display: none;
+}
+
+#latest.a1.a2 {
+    display: none;
+}
+
+#update.a1, #update.a2 {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+#header {
+    margin: 10px 0;
+    display: flex;
+    gap: 0.3em;
+}
+#header.hidden {
+    display: none;
+}
+
+#input {
+    width: 18em;
+    box-sizing: border-box;
+    padding: 0.1em;
+}
+
+#search {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    cursor: pointer;
+}
+
+
+#answer {
+    display: none;
+}
+
+#answer.active {
+    display: block;
+}
+
+
+
+
+
+#strs {
+    margin: 10px auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+  
+.str {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    padding: 11px 12px 9px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+  
+.str.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.str-eng {
+    margin: 0 35px 0 0;
+}
+
+.str .str-tags {
+    display: none;
+    font-size: 0.8em;
+    color: #727679;
+    margin-left: 1em;
+}
+
+.str.active .str-tags {
+    display: inline;
+}
+
+.str.active .str-item {
+    display: none;
+}
+
+.str-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.str-kor {
+    height: 6em;
+}
+
+.str-tag {
+    height: 2em;
+}
+
+.str textarea {
+    font-family: 'D2Coding';
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0 0;
+    padding: 3px 5px 2px;
+    border-radius: 3px;
+    background-color: #e8e8e870;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.toggle {
+    position: absolute;
+    top: .8em;
+    right: 20px;
+    background-color: #ababab;
+}
+
+.str .str-show {
+    cursor: pointer;
+    transition: color 300ms;
+}
+.str .str-show:hover {
+    color: #727677;
+}
+
+.str.active .str-show {
+    cursor: default;
+    color: #000;
+}
+
+.str-stat.tr {
+    background-color: #1e6922;
+}
+
+.str-stat {
+    background-color: #420e0e;
+}
+
+.toggle, .str-stat {
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    transition: background-color 300ms;
+}
+  
+.toggle:focus, .str-stat:focus {
+    outline: 0;
+}
+  
+.str.active .toggle {
+    background-color: #727679;
+}
+
+
+
+
+#pages {
+    display: flex;
+    margin-bottom: 0.3em;
+    gap: 5px;
+}
+
+.page {
+    text-decoration: none;
+    color: #727679;
+    transition: color 300ms;
+}
+
+.page:hover {
+    color: #000;
+}
+
+.page.active {
+    font-weight: bold;
+    color: #36c3ff;
+}

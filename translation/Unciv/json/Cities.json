@@ -1,0 +1,32 @@
+[
+  {
+    "key": "CITY_NAME_NEW",
+    "original": "New [cityName]",
+    "translation": "신 [cityName]",
+    "stage": 1
+  },
+  {
+    "key": "CITY_NAME_NEO",
+    "original": "Neo [cityName]",
+    "translation": "네오 [cityName]",
+    "stage": 1
+  },
+  {
+    "key": "CITY_NAME_NOVA",
+    "original": "Nova [cityName]",
+    "translation": "노바 [cityName]",
+    "stage": 1
+  },
+  {
+    "key": "CITY_NAME_ALTERA",
+    "original": "Altera [cityName]",
+    "translation": "알테라 [cityName]",
+    "stage": 1
+  },
+  {
+    "key": "CITY_NAME_FORMERLY-KNOWN",
+    "original": "New [civName]\\n(formerly known as [cityName])",
+    "translation": "신 [civName]\\n(이전에 [cityName]으로 알려진)",
+    "stage": 1
+  }
+]

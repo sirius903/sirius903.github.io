@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'GangwonState';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #808080;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px #808080;
+}
+
+.logo {
+    margin: 0.1em 0 0.4em;
+}
+
+.logo a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #3498db;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contents {
+    min-height: 100vh;
+    display: grid;
+    background-color: #fff;
+    margin: 0 50px;
+    padding-top: 5em;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: start;
+}
+
+.content.none {
+    background-color: #808080;
+    border-color: #808080;
+}
+
+.content.none:hover {
+    background-color: #6b6b6b;
+    color: white;
+}
+
+.content.none img {
+    border-color: #808080;
+}
+
+.content {
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #3498db;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.content img {
+    width: 100%;
+    border: solid;
+    border-radius: 10px;
+    border-color: #3498db;
+}
+
+.content-title {
+    font-family: 'GangwonState';
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #6b6b6b;
+    height: 100px;
+}
+
+
+
+
+#lab {
+    display: flex;
+    flex-direction: column;
+}
+
+#playing-bar {
+    background-color: #414146;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playing-labels {
+    font-size: 1.5em;
+    color: white;
+    margin-right: 0.3em;
+}
+
+.playing-inputs {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+.playing-btns {
+    background-color: white;
+    border-radius: 0.1em;
+    font-size: 1em;
+    height: 1.8em;
+    width: 1.8em;
+    margin: 0 0.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.playing-btns:hover {
+    background-color: #cfcfcf;
+}
+
+.playing-btns img {
+    width: 80%;
+    height: 80%;
+}
+
+#back-btn {
+    position: fixed;
+    right: 0;
+    background-color: white;
+    border-radius: 0.1em;
+    font-size: 1.4em;
+    height: 1.8em;
+    width: 3.5em;
+    margin: 0 0.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#back-btn:hover {
+    background-color: #cfcfcf;
+}
+
+#content {
+    display: flex;
+    position: fixed;
+    top: 3em;
+    bottom: 0;
+}
+
+#canvas {
+    background-color: #1d1d25;
+    cursor: move;
+}
+
+#configs {
+    background-color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em 0.6em;
+    font-size: 1.3em;
+}
+
+#configs form{
+    margin-left: 0.3em;
+}
+
+#resizer {
+    background-color: #9d9d9d;
+    color: #d6d6d6;
+    cursor: ew-resize;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+#graph {
+    border: solid;
+}

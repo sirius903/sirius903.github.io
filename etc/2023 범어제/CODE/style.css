@@ -1,0 +1,91 @@
+body[data-thema='light-mode'] {
+    --wall : #000000;
+    --goal : #009800;
+    --blue : #0000ff;
+    --orange : #ffa500;
+}
+
+body[data-thema='dark-mode'] {
+    --wall : #c3c3c3;
+    --goal : #008000;
+    --blue : #006eff;
+    --orange : #ffc863;
+}
+
+body[data-chapter='0']{
+    --size : calc(60vh / 10);
+}
+body[data-chapter='1']{
+    --size : calc(60vh / 16);
+}
+body[data-chapter='2']{
+    --size : calc(60vh / 10);
+}
+body[data-chapter='3']{
+    --size : calc(60vh / 14);
+}
+body[data-chapter='4']{
+    --size : calc(60vh / 31);
+}
+body[data-chapter='5']{
+    --size : calc(60vh / 30);
+}
+body[data-chapter='6']{
+    --size : calc(60vh / 50);
+}
+
+.objects_low {
+    display: flex;
+}
+
+.object {
+    height: var(--size);
+    width: var(--size);
+    font-size: var(--size);
+    text-align: center;
+    /* font-size: 2.5em; */
+}
+
+.blank {
+    color: gray;
+}
+
+.wall {
+    color: var(--wall);
+}
+
+.able-goal {
+    color: var(--goal);
+}
+
+.disable-goal {
+    color: #808080;
+}
+
+.trap {
+    color: #ff0000;
+}
+
+.button {
+    color: #ff0000;
+}
+
+.blue-potal {
+    color: var(--blue);
+}
+
+.orange-potal {
+    color: var(--orange);
+}
+
+.coin {
+    color: #ffc20a;
+}
+
+.key {
+    color: #ffc20a;
+}
+
+.box {
+    color: #874205;
+}

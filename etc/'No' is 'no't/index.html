@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노가 아니었노~</title>
+  <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+  <!-- <link rel="icon" href="src/images/favicon.ico"> -->
+</head>
+<body>
+  <div id="menu">
+    <h6 id="subtitle">일베테스트</h6>
+    <h1 id="title"><strong>노</strong>가 아니었<strong>노</strong>~</h1>
+    <button id="start">시작하기</button>
+  </div>
+  <div id="노"></div>
+  <script src="src/js/main.js"></script>
+  <script>
+    let array = ["그게 뭐노", "했노, 안 했노", "존나 빠르노", "밥 무웃노", "집에 가노", "이기 뭐노", "최강한남은 역시 수권이노", ["김민수가 뭐노, 노민수다. 이기야", "다? 신고합니노"], "뭐했노", "대가리가 쳐돌았뿟노", "노곤노곤하노", "깔쌈하이 미쳤노", "이 책 보고 얼마나 운지 모르겟노", "와 ㄹㅇ 쌀 것 같노", "난 포르노를 모르노"];
+    function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  shuffle(array)
+  array.flat().forEach((x, y) => {
+    document.getElementById("노").innerHTML += `<p>${y + 1}. ${x}</p>`
+  })
+
+  </script>
+</body>
+</html>

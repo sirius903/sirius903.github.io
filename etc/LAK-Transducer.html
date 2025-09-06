@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="number" i] {
+            text-align: end;
+        }
+        input:disabled {
+            text-align: end;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: row; justify-content: center;">
+    <div style="display: flex; flex-direction: column; width: 20em;">
+        <div style="height: 10em;"></div>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column;">
+                <div>
+                    <input type="number" min="0" class="금액" value="1000" step="10"><label class="화폐1">KRW(₩)</label>
+                </div>
+                <div>
+                    <input class="금액" value="0.75" disabled><label class="화폐1">USD($)</label>
+                </div>
+                <div>
+                    <input class="금액" value="15280" disabled><label class="화폐1">LAK(₭)</label>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div>
+                    <input type="radio" value="KRW" id="KRW" name="화폐" class="화폐" checked><label for="KRW">KRW(₩)</label>
+                </div>
+                <div>
+                    <input type="radio" value="USD" id="USD" name="화폐" class="화폐"><label for="USD">USD($)</label>
+                </div>
+                <div>
+                    <input type="radio" value="LAK" id="LAK" name="화폐" class="화폐"><label for="LAK">LAK(₭)</label>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="변환" id="변환">
+    </div>
+    <script>
+        let type = 0;
+        //K, U, L
+        let 화폐 = [1000, 0.75, 15280];
+        function K(x){
+            화폐[0] = x;
+            화폐[1] = x * 0.00075;
+            화폐[2] = x * 15.28;
+            apply(0);
+        }
+        function U(x){
+            화폐[0] = x * 1339.68;
+            화폐[1] = x;
+            화폐[2] = x * 20472.75;
+            apply(1);
+        }
+        function L(x){
+            화폐[0] = x * 0.065;
+            화폐[1] = x * 0.000049;
+            화폐[2] = x;
+            apply(2);
+        }
+        function apply(x){
+            let list = [0, 1, 2];
+            list.splice(x, 1);
+            list.unshift(x);
+            document.querySelectorAll('.금액').forEach((a, i)=>{
+                a.value = 화폐[list[i]];
+            })
+        }
+        document.querySelectorAll('.화폐').forEach((a, i)=>{
+            a.addEventListener("click", function(){
+                type = i;
+                let list = ['KRW(₩)', 'USD($)', 'LAK(₭)'];
+                list = list.filter(x => x != list[i]);
+                list.unshift(['KRW(₩)', 'USD($)', 'LAK(₭)'][i]);
+                document.querySelectorAll('.화폐1').forEach((b, j) => {
+                    b.innerText = list[j];
+                })
+                apply(i);
+            })
+        })
+        document.getElementById('변환').addEventListener("click", function(){
+            let money = document.querySelector('.금액').value;
+            switch (type) {
+                case 0:
+                    K(money);
+                    break;
+                case 1:
+                    U(money);
+                    break;
+                case 2:
+                    L(money);
+                    break;
+            }
+        })
+    </script>
+</body>
+</html>

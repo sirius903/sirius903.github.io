@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Translator</title>
+  <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+  <link rel="icon" href="../../src/images/favicon.ico">
+</head>
+<body>
+  <h1>File Translator</h1>
+  <div id="header">
+    <select name="sort" id="sort">
+      <option value="old">Unciv - Json으로</option>
+      <option value="new">Unciv - temp으로</option>
+      <option value="atoz">A to Z</option>
+      <option value="ztoa">Z to A</option>
+    </select>
+    <form id="form" onsubmit="return false">
+      <input type="search" id="input" placeholder="검색어를 입력해주세요...">
+      <button id="search">검색하기</button>
+    </form>
+  </div>
+  <div id="div">
+    <textarea id="translated2" placeholder="기존 코드를 입력해 주세요..." autocapitalize="off" autocomplete="off" spellcheck="false"></textarea>
+    <textarea id="to-translate" placeholder="코드를 입력해 주세요..." autocapitalize="off" autocomplete="off" spellcheck="false"></textarea>
+    <div id="translate">변환하기</div>
+    <textarea id="translated" spellcheck="false" onclick="this.select();document.execCommand('copy');alert('클립보드에 복사 되었습니다.');return false;" autocapitalize="off" autocomplete="off" placeholder="변환된 코드가 나타납니다."></textarea>
+  </div>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>

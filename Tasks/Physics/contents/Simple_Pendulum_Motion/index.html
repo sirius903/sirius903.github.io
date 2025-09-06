@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="playing-bar">
+            <label for="fps" class="playing-labels">FPS</label>
+            <input placeholder="fps" id="fps" class="playing-inputs" min="1" max="1000" type="number" value="50">
+            <label for="meter" class="playing-labels">Size</label>
+            <input placeholder="Size" id="meter" class="playing-inputs" min="50" max="10000" type="number" value="150">
+            <div class="playing-btns" id="reset"><img src="../../images/reset.svg"></div>
+            <div class="playing-btns" id="play"><img src="../../images/play.svg"></div>
+            <div class="playing-btns" id="stop"><img src="../../images/stop.svg"></div>
+            <div class="playing-btns speed">x⅒</div>
+            <div class="playing-btns speed">x¼</div>
+            <div class="playing-btns speed">x½</div>
+            <div class="playing-btns speed">x1</div>
+            <div class="playing-btns speed">x2</div>
+            <div class="playing-btns speed">x5</div>
+            <div class="playing-btns" id="initialize">↻</div>
+            <div id="back-btn">Back</div>
+        </div>
+        <div id="content">
+            <canvas id="canvas" width="1500px" height="1500px" style="width: 500px;"></canvas>
+            <div id="resizer">||</div>
+            <div id="configs" style="width: calc(100vw - 510px);">
+                <section class="converts">
+                    <h1>Pivot</h1>
+                    <form onsubmit="return false;">
+                     <label for="pivot-x" title="The X-coordinate of The Pivot">X-coordinate</label>
+                     <input type="number" placeholder="0" value="0" id="pivot-x" min="-100" max="100" step="0.1" onchange="change(21, this.value);" title="Converts The X-coordinate of The Pivot(Default : 0)">
+                     <input type="reset" value="reset" onclick="change(21, 0);" title="Resets The X-coordinate(Default : 0)">
+                     <input type="submit" value="submit" onclick="change(21, document.getElementById('pivot-x').value);" title="The X-coordinate Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="pivot-y" title="The Y-coordinate of The Pivot">Y-coordinate</label>
+                     <input type="number" placeholder="7" value="7" id="pivot-y" min="-100" max="100" step="0.1" onchange="change(22, this.value);" title="Converts The Y-coordinate of The Pivot(Default : 7)">
+                     <input type="reset" value="reset" onclick="change(22, 7);" title="Resets The Y-coordinate(Default : 7)">
+                     <input type="submit" value="submit" onclick="change(22, document.getElementById('pivot-y').value);" title="The Y-coordinate Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="string-length" title="The Length of The String">The String's Length</label>
+                     <input type="number" placeholder="2.5" value="2.5" id="string-length" min="0" max="100" step="0.1" onchange="change(23, this.value);" title="Converts The Length of The String(Default : 2.5)">
+                     <input type="reset" value="reset" onclick="change(23, 2.5)" title="Resets The Length(Default : 2.5)">
+                     <input type="submit" value="submit" onclick="change(23, document.getElementById('string-length').value);" title="The Length Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Pendulum</h1>
+                    <form onsubmit="return false;">
+                     <label for="pendulum-angle" title="The Angle of The Pendulum">Angle</label>
+                     <input type="number" placeholder="45" value="45" id="pendulum-angle" min="-180" max="180" step="0.1" onchange="change(24, this.value)" title="Converts The Angle of The Pendulum(Default : 45)">
+                     <input type="reset" value="reset" onclick="change(24, 45);" title="Resets The Angle(Default : 45)">
+                     <input type="submit" value="submit" onclick="change(24, document.getElementById('pendulum-angle').value);" title="The Angle Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="pendulum-radius" title="The Radius of The Pendulum">Radius</label>
+                     <input type="number" placeholder="0.25" value="0.25" id="pendulum-radius" min="0" max="100" step="0.01" onchange="change(25, this.value);" title="Converts The Radius of The Pendulum(Default : 0.25)">
+                     <input type="reset" value="reset" onclick="change(25, 0.25)" title="Resets The Radius(Default : 0.25)">
+                     <input type="submit" value="submit" onclick="change(25, document.getElementById('pendulum-radius').value);" title="The Radius Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="pendulum-mass" title="The Mass of The Pendulum">Mass</label>
+                     <input type="number" placeholder="1" value="1" id="pendulum-mass" min="0" max="100" onchange="change(26, this.value);" title="Converts The Mass of The Pendulum(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(26, 1)" title="Resets The Mass(Default : 1)">
+                     <input type="submit" value="submit" onclick="change(26, document.getElementById('satellite-mass').value);" title="The Mass Conversion Button">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="pendulum-velocity" title="The Velocity of The Pendulum">Velocity</label>
+                     <input type="number" placeholder="0" value="0" id="pendulum-velocity" min="-100" max="100" step="0.1" onchange="change(27, this.value)" title="Converts The Velocity of The Pendulum(Default : 0)">
+                     <input type="reset" value="reset" onclick="change(27, 0);" title="Resets The Velocity(Default : 0)">
+                     <input type="submit" value="submit" onclick="change(27, document.getElementById('pendulum-velocity').value);" title="The Velocity Conversion Button"><br>
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Results</h1>
+                    <form onsubmit="return false;">
+                     <label title="X-coordinate of The Pendulum">X-coordinate</label>
+                     <input type="number" value="0" id="x-coordinate" title="X-coordinate of The Pendulum" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Y-coordinate of The Pendulum">Y-coordinate</label>
+                     <input type="number" value="0" id="y-coordinate" title="Y-coordinate of The Pendulum" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="The Angle of The Pendulum">Angle</label>
+                     <input type="number" value="0" id="result-angle" title="The Angle of The Pendulum" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Velocity of The Pendulum">Velocity</label>
+                     <input type="number" value="0" id="result-velocity" title="Velocity of The Pendulum" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Maximum Velocity of The Pendulum">Maximum Velocity</label>
+                     <input type="number" value="0" id="maximum-velocity" title="Maximum Velocity of The Pendulum" disabled>
+                     <input type="reset" value="reset" onclick="maximum = 0;" title="Resets Maximum Velocity">
+                    </form>
+                </section>
+                <canvas id="graph"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../../config.js"></script>
+    <script src="../../resizer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

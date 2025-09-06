@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: 'DungGeunMo';
+    user-select: none;
+    overflow: hidden;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-div {
+    height: 50vh;
+}
+
+#title {
+    margin-top: 20vh;
+    /*  */
+    font-size: 8em;
+}
+
+#main-btns {
+    font-size: 1.5rem;
+}
+
+.main-btn {
+    margin-top: 1em;
+    border-radius: 50%;
+    padding: 0.4em 2em;
+    text-align: center;
+    background: radial-gradient(#8e8e8e55 10px, rgba(0, 0, 0, 0) 100px);
+    text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;
+    color: #808080;
+    transition: all 300ms;
+}
+
+.main-btn:hover {
+    font-size: 1.7rem;
+    color: white;
+    background: radial-gradient(#0088ff55 10px, rgba(0, 0, 0, 0) 100px);
+}
+
+#level-btns {
+    font-size: 1.5rem;
+}
+
+.level-btn {
+    margin-top: 1em;
+    border-radius: 50%;
+    padding: 0.4em 2em;
+    text-align: center;
+    background: radial-gradient(#8e8e8e55 10px, rgba(0, 0, 0, 0) 100px);
+    text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;
+    color: #808080;
+    transition: all 300ms;
+}
+
+.level-btn:hover {
+    font-size: 1.7rem;
+    color: white;
+    background: radial-gradient(#0088ff55 10px, rgba(0, 0, 0, 0) 100px);
+}
+
+#canvas {
+    background-color: black;
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+/*  */
+
+
+
+.btn {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

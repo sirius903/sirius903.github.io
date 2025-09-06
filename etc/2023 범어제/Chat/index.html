@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <div id="title" title="2023 범어제" onclick="window.location.href = '../';">
+            <div id="title1" class="title">2</div>
+            <div id="title2" class="title">0</div>
+            <div id="title3" class="title">2</div>
+            <div id="title4" class="title">3</div>
+            <div id="title5" class="title">범어제</div>
+        </div>
+        <div id="entry">
+            <div class="entry" id="exit" onclick="window.location.href = '../';">나가기</div>
+        </div>
+        <div id="profile" class="hidden">
+            <div id="name"><!-- 설마 이거 뜯어 본 놈 없지? --></div>
+            <div id="rank"><!-- ...설마 --></div>
+            <div id="point"><!-- 진짜 뜯다가 걸리면... --></div>
+            <div class="entry" id="log-out">로그아웃</div>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title">채팅</h1>
+        <div class="content">
+            <div id="chats">
+                <div class="chatting">
+                    <div class="id">id</div>
+                    <div class="chat">chat</div>
+                </div>
+            </div>
+            <div id="chat-insert">
+                <input placeholder="채팅..." id="chat-input">
+                <div id="chat-btn">입력</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="info">
+            <h1 id="footer-title">CODE</h1>
+            <div id="contact">
+                <p>부장 : 20621 염규원</p>
+                <p>전화 : 010-8680-4037</p>
+            </div>
+        </div>
+        <select id="thema" onchange="darkmode();">
+            <option id="light-mode" selected>밝은 배경</option>
+            <option id="dark-mode">어두운 배경</option>
+            <option id="credit">크레딧</option>
+        </select>
+    </footer>
+    <script src="../thema.js"></script>
+    <script type="module">
+        import { chat, chat_load } from '../main.js';
+        const load = function(a){
+            document.getElementById("chats").innerHTML = ``;
+            a.forEach(x => {
+                document.getElementById("chats").innerHTML += `<div class="chatting">
+                    <div class="id">${x.id}</div>
+                    <div class="chat">${x.chat}</div>
+                </div>`
+                // console.log(x)
+            })
+        }
+        chat_load(load);
+        document.getElementById("chat-input").addEventListener("keypress", function(e){
+            if(e.key === "Enter" && this.value != ""){
+                chat(this.value, Date());
+                this.value = '';
+            }
+        })
+        document.getElementById("chat-btn").addEventListener("click", function(){
+            let value = document.getElementById("chat-input").value;
+            if(value != ""){
+                chat(value, Date());
+                value = '';
+
+            }
+        })
+    </script>
+    <script src="../sha256.js"></script>
+</body>
+</html>

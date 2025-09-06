@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Repository</title>
+  <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+  <link rel="icon" href="../../src/images/favicon.ico">
+</head>
+<body>
+  <h1>Code Repository</h1>
+  <div id="header">
+    <select name="sort" id="sort">
+      <option value="old">등록순</option>
+      <option value="new">최신순</option>
+      <option value="atoz">A to Z</option>
+      <option value="ztoa">Z to A</option>
+    </select>
+    <form id="form" onsubmit="return false">
+      <input type="search" id="input" placeholder="검색어를 입력해주세요...">
+      <button id="search">검색하기</button>
+    </form>
+  </div>
+  <h3 id="answer">???의 검색 결과 :</h3>
+  <div id="codes">
+    <!-- <div class="code">
+      <h3 class="code-title">질문 1</h3>
+      <p class="code-text">대답 1</p>
+      <button class="code-toggle">
+      </button>
+    </div> -->
+  </div>
+  <div id="pages">
+    <!-- <a class="page" href="#1">1</a> -->
+  </div>
+  <hr id="hr">
+  <div id="div">
+    <input id="name" placeholder="제목을 입력해 주세요..." autocomplete="off" autocapitalize="off" spellcheck="false">
+    <textarea id="code" placeholder="코드를 입력해 주세요..." autocapitalize="off" autocomplete="off" spellcheck="false"></textarea>
+    <div id="btns">
+      <div id="save" class="btn">저장하기</div>
+      <div id="cancel" class="btn">취소하기</div>
+    </div>
+  </div>
+  <div id="to-save">저장하러 가기</div>
+  <script type="module" src="src/js/script.js"></script>
+</body>
+</html>

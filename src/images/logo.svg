@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <mask id="star">
+    <path d="M 56 239 L 130 11 L 204 239 L 10 98 L 250 98" style="fill: white;"/>
+  </mask>
+  <g mask="url(#star)" transform="matrix(1.138447, 0, 0, 1.138447, 2.001862, -0.998152)" style="">
+    <polygon points="0 0 0 260 80 260 150 0" fill="#41a9ff" style=""/>
+    <polygon points="185 0 260 0 260 260 115 260" fill="#41a9ff" style=""/>
+  </g>
+  <polygon points="174.476 13.802 202.938 13.802 131.215 280.198 102.755 280.198" style="fill: rgb(65, 169, 255);"/>
+</svg>

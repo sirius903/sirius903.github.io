@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="playing-bar">
+            <label for="fps" class="playing-labels">FPS</label>
+            <input placeholder="fps" id="fps" class="playing-inputs" min="1" max="1000" type="number" value="50">
+            <label for="meter" class="playing-labels">Size</label>
+            <input placeholder="Size" id="meter" class="playing-inputs" min="50" max="10000" type="number" value="150">
+            <div class="playing-btns" id="reset"><img src="../../images/reset.svg"></div>
+            <div class="playing-btns" id="play"><img src="../../images/play.svg"></div>
+            <div class="playing-btns" id="stop"><img src="../../images/stop.svg"></div>
+            <div class="playing-btns speed">x⅒</div>
+            <div class="playing-btns speed">x¼</div>
+            <div class="playing-btns speed">x½</div>
+            <div class="playing-btns speed">x1</div>
+            <div class="playing-btns speed">x2</div>
+            <div class="playing-btns speed">x5</div>
+            <div class="playing-btns" id="initialize">↻</div>
+            <div id="back-btn">Back</div>
+        </div>
+        <div id="content">
+            <canvas id="canvas" width="1500px" height="1500px" style="width: 500px;"></canvas>
+            <div id="resizer">||</div>
+            <div id="configs" style="width: calc(100vw - 510px);">
+                <section class="converts">
+                    <h1>Gravity</h1>
+                    <form onsubmit="return false;">
+                     <label for="gravity-input" title="Gravitational force">G-force</label>
+                     <input type="number" placeholder="9.8" value="9.8" id="gravity-input" min="-100" max="100" step="0.1" onchange="change(0, this.value);" title="Converts G-force(Default : 9.8)">
+                     <input type="reset" value="reset" onclick="change(0, 9.8)" title="Resets G-force(Default : 9.8)">
+                     <input type="submit" value="submit" onclick="change(0, document.getElementById('gravity-input').value);" title="G-force Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Ground</h1>
+                    <form onsubmit="return false;">
+                     <label for="ground-height" title="The Height of The Ground">Height</label>
+                     <input type="number" placeholder="0.5" value="0.5" id="ground-height" min="0" max="100" step="0.01" onchange="change(8, this.value)" title="Converts The Height of The Ground(Default : 0.5)">
+                     <input type="reset" value="reset" onclick="change(8, 0.5);" title="Resets The Height(Default : 0.5)">
+                     <input type="submit" value="submit" onclick="change(8, document.getElementById('ground-height').value)" title="The height Conversion Button"><br>
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>1st Apple</h1>
+                    <form onsubmit="return false;">
+                     <label for="apple-radius-0" title="The Radius of The Apple">Radius</label>
+                     <input type="number" placeholder="0.25" value="0.25" id="apple-radius-0" min="0.01" max="1" step="0.01" onchange="change(9, this.value, 0);" title="Converts The Radius of The Apple(Default : 0.25)">
+                     <input type="reset" value="reset" onclick="change(9, 0.25, 0);" title="Resets The Radius(Default : 0.25)">
+                     <input type="submit" value="submit" onclick="change(9, document.getElementById('apple-radius-0').value, 0);" title="The Radius Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="apple-mass-0" title="The Mass of The Apple">Mass</label>
+                     <input type="number" placeholder="1" value="1" id="apple-mass-0" min="0.1" max="100" step="0.1" onchange="change(10, this.value, 0);" title="Converts The Mass of The Apple(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(10, 1, 0)" title="Resets The Mass(Default : 1)">
+                     <input type="submit" value="submit" onclick="v = change(10, document.getElementById('apple-mass-0').value, 0);" title="The Mass Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="apple-hv-0" title="The Horizontal Velocity of The Marble">Horizontal Velocity</label>
+                     <input type="number" placeholder="2" value="2" id="apple-hv-0" min="0" max="100" step="0.1" onchange="change(11, this.value, 0);" title="Converts The Horizontal Velocity of The Apple(Default : 2)">
+                     <input type="reset" value="reset" onclick="change(11, 2, 0)" title="Resets The Horizontal Velocity(Default : 2)">
+                     <input type="submit" value="submit" onclick="v = change(11, document.getElementById('apple-hv-0').value, 0);" title="The Horizontal Velocity Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="apple-vv-0" title="The Vertical Velocity of The Marble">Vertical Velocity</label>
+                     <input type="number" placeholder="0" value="0" id="apple-vv-0" min="0.1" max="100" step="0.1" onchange="change(12, this.value, 0);" title="Converts The Vertical Velocity of The Apple(Default : 0)">
+                     <input type="reset" value="reset" onclick="change(12, 0, 0)" title="Resets The Vertical Velocity(Default : 0)">
+                     <input type="submit" value="submit" onclick="v = change(12, document.getElementById('apple-vv-0').value, 0);" title="The Vertical Apple Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="X-coordinate of The Apple">X-coordinate</label>
+                     <input type="number" value="1" id="apple-x-0" title="X-coordinate of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Y-coordinate of The Apple">Y-coordinate</label>
+                     <input type="number" value="8" id="apple-y-0" title="Y-coordinate of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Maximum Height of The Apple">Maximum Height</label>
+                     <input type="number" value="0.5" id="apple-maximum-0" title="Maximum Height of The Apple" disabled>
+                     <input type="reset" value="reset" onclick="apple[0].maximum = 0;" title="Resets Maximum Height">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Horizontal Velocity of The Apple">Horizontal Velocity</label>
+                     <input type="number" value="0" id="apple-hvr-0" title="Horizontal Velocity of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Vertical Velocity of The Apple">Vertical Velocity</label>
+                     <input type="number" value="0" id="apple-vvr-0" title="Vertical Velocity of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Kinetic Energy of The Apple">Kinetic Energy</label>
+                     <input type="number" value="0" id="apple-ke-0" title="Kinetic Energy of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Potential Energy of The Apple">Potential Energy</label>
+                     <input type="number" value="0" id="apple-pe-0" title="Potential Energy of The Apple" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Dynamics Energy of The Apple">Dynamics Energy</label>
+                     <input type="number" value="0" id="apple-de-0" title="Dynamics Energy of The Apple" disabled>
+                    </form>
+                </section>
+                <section class="converts">
+                    <button id="add-apple">Add Apple</button>
+                </section>
+                <canvas id="graph"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../../config.js"></script>
+    <script src="../../resizer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

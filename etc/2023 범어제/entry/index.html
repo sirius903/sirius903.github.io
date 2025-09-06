@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <div id="title" title="2023 범어제" onclick="window.location.href = '../';">
+            <div id="title1" class="title">2</div>
+            <div id="title2" class="title">0</div>
+            <div id="title3" class="title">2</div>
+            <div id="title4" class="title">3</div>
+            <div id="title5" class="title">범어제</div>
+        </div>
+        <div id="entry">
+            <div class="entry hidden" id="log-in" onclick="location.replace('?log-in?' + window.location.search.split('?')[2]);">로그인</div>
+            <div class="entry hidden" id="sign-up" onclick="location.replace('?sign-up?' + window.location.search.split('?')[2]);">회원가입</div>
+            <div class="entry" id="exit" onclick="window.location.href = '../' + window.location.search.split('?')[2];">나가기</div>
+        </div>
+        <div id="profile" class="hidden">
+            <div id="name"><!-- 설마 이거 뜯어 본 놈 없지? --></div>
+            <div id="rank"><!-- ...설마 --></div>
+            <div id="point"><!-- 진짜 뜯다가 걸리면... --></div>
+            <div class="entry" id="log-out">로그아웃</div>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title hidden">로그인</h1>
+        <div class="content hidden">
+            <input class="item" placeholder="학번" id="log-in-cn">
+            <input class="item" placeholder="비밀번호" id="log-in-pw" type="password">
+            <div class="entry-btn" id="log-in-btn">로그인</div>
+        </div>
+        <h1 class="main-title hidden">회원가입</h1>
+        <div class="content hidden">
+            <input class="item" placeholder="아이디" id="sign-up-id">
+            <input class="item" placeholder="학번" id="sign-up-cn">
+            <input class="item" placeholder="비밀번호" id="sign-up-pw" type="password">
+            <fieldset id="how_to_receive">
+                <label class="how_to_receive">
+                    <input type="radio" name="how_to_receive">
+                    <span>문자</span>
+                </label>
+                <label class="how_to_receive">
+                    <input type="radio" name="how_to_receive">
+                    <span>이메일</span>
+                </label>
+                <label class="how_to_receive">
+                    <input type="radio" name="how_to_receive">
+                    <span>-</span>
+                </label>
+            </fieldset>
+            <input class="item hwr hidden" placeholder="전화번호">
+            <input class="item hwr hidden" placeholder="이메일">
+            <select class="item hwr hidden">
+                <option>-</option>
+                <option>-</option>
+                <option>-</option>
+            </select>
+            <div class="entry-btn" id="sign-up-btn">회원가입</div>
+        </div>
+    </main>
+    <footer>
+        <div id="info">
+            <h1 id="footer-title">CODE</h1>
+            <div id="contact">
+                <p>부장 : 20621 염규원</p>
+                <p>전화 : 010-8680-4037</p>
+            </div>
+        </div>
+        <select id="thema" onchange="darkmode();">
+            <option id="light-mode" selected>밝은 배경</option>
+            <option id="dark-mode">어두운 배경</option>
+            <option id="credit">크레딧</option>
+        </select>
+    </footer>
+    <script src="../thema.js"></script>
+    <script>
+        window.onload = function(){
+            if(window.location.search.split('?')[1] == 'log-in'){
+                document.querySelectorAll('.main-title')[0].className = 'main-title';
+                document.querySelectorAll('.content')[0].className = 'content';
+                document.getElementById('sign-up').className = 'entry';
+                document.getElementById('log-in-cn').focus();
+            }else if(window.location.search.split('?')[1] == 'sign-up'){
+                document.querySelectorAll('.main-title')[1].className = 'main-title';
+                document.querySelectorAll('.content')[1].className = 'content';
+                document.getElementById('log-in').className = 'entry';
+                document.getElementById('sign-up-id').focus();
+            }
+        }
+        document.getElementById('log-in-cn').addEventListener("keydown", function(e){
+            if(e.code === 'Enter'){
+                document.getElementById('log-in-pw').focus();
+            }
+        })
+        document.getElementById('sign-up-id').addEventListener("keydown", function(e){
+            if(e.code === 'Enter'){
+                document.getElementById('sign-up-cn').focus();
+            }
+        })
+        document.getElementById('sign-up-cn').addEventListener("keydown", function(e){
+            if(e.code === 'Enter'){
+                document.getElementById('sign-up-pw').focus();
+            }
+        })
+        document.querySelectorAll('.how_to_receive').forEach((a, i) => {
+            a.addEventListener("click", function(){
+                document.querySelectorAll('.hwr').forEach((e, j) => {
+                    if(i == j){
+                        e.className = 'item hwr';
+                    }else{
+                        e.className = 'item hwr hidden';
+                    }
+                })
+            });
+        })
+    </script>
+    <script type="module">
+        import { login, signup } from '../main.js';
+        document.getElementById('log-in-btn').addEventListener("click", function(){
+            login(document.getElementById('log-in-cn').value, document.getElementById('log-in-pw').value, window.origin + '/' + window.location.pathname.split('/')[1] + '/' + window.location.search.split('?')[2]);
+        });
+        document.getElementById('log-in-pw').addEventListener("keydown", function(e){
+            if(e.code === 'Enter'){
+                login(document.getElementById('log-in-cn').value, document.getElementById('log-in-pw').value, window.origin + '/' + window.location.pathname.split('/')[1] + '/' + window.location.search.split('?')[2]);
+            }
+        });
+        document.getElementById('sign-up-btn').addEventListener("click", function(){
+            signup(document.getElementById('sign-up-cn').value, document.getElementById('sign-up-id').value, document.getElementById('sign-up-pw').value, window.origin + '/' + window.location.pathname.split('/')[1] + '/' + window.location.search.split('?')[2]);
+        })
+        document.getElementById('sign-up-pw').addEventListener("keydown", function(e){
+            if(e.code === 'Enter'){
+                signup(document.getElementById('sign-up-cn').value, document.getElementById('sign-up-id').value, document.getElementById('sign-up-pw').value, window.origin + '/' + window.location.pathname.split('/')[1] + '/' + window.location.search.split('?')[2]);
+            }
+        })
+    </script>
+    <script src="../sha256.js"></script>
+</body>
+</html>

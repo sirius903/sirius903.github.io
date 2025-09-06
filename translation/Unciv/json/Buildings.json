@@ -1,0 +1,818 @@
+[
+  {
+    "key": "BUI_Monument",
+    "original": "Monument",
+    "translation": "기념비",
+    "context": ""
+  },{
+    "key": "BUI_Granary",
+    "original": "Granary",
+    "translation": "곡창",
+    "context": ""
+  },{
+    "key": "BUI_Stone-Works",
+    "original": "Stone Works",
+    "translation": "석재 공장",
+    "context": ""
+  },{
+    "key": "BUI_Library",
+    "original": "Library",
+    "translation": "도서관",
+    "context": ""
+  },{
+    "key": "BUI_Paper-Maker",
+    "original": "Paper Maker",
+    "translation": "종이 공방",
+    "context": ""
+  },{
+    "key": "BUI_Circus",
+    "original": "Circus",
+    "translation": "서커스",
+    "context": ""
+  },{
+    "key": "BUI_Water-Mill",
+    "original": "Water Mill",
+    "translation": "물레방앗간",
+    "context": ""
+  },{
+    "key": "BUI_Floating-Gardens",
+    "original": "Floating Gardens",
+    "translation": "수상 정원",
+    "context": ""
+  },{
+    "key": "BUI_Walls",
+    "original": "Walls",
+    "translation": "성벽",
+    "context": ""
+  },{
+    "key": "BUI_Walls-of-Babylon",
+    "original": "Walls of Babylon",
+    "translation": "바빌론 성벽",
+    "context": ""
+  },{
+    "key": "BUI_Barracks",
+    "original": "Barracks",
+    "translation": "병영",
+    "context": ""
+  },{
+    "key": "BUI_Krepost",
+    "original": "Krepost",
+    "translation": "크리아포스츠",
+    "context": ""
+  },{
+    "key": "BUI_Lighthouse",
+    "original": "Lighthouse",
+    "translation": "등대",
+    "context": ""
+  },{
+    "key": "BUI_Stable",
+    "original": "Stable",
+    "translation": "마구간",
+    "context": ""
+  },{
+    "key": "BUI_Courthouse",
+    "original": "Courthouse",
+    "translation": "법원",
+    "context": ""
+  },{
+    "key": "BUI_Colosseum",
+    "original": "Colosseum",
+    "translation": "콜로세움",
+    "context": ""
+  },{
+    "key": "BUI_Temple",
+    "original": "Temple",
+    "translation": "사원",
+    "context": ""
+  },{
+    "key": "BUI_Burial-Tomb",
+    "original": "Burial Tomb",
+    "translation": "왕릉",
+    "context": ""
+  },{
+    "key": "BUI_Mud-Pyramid-Mosque",
+    "original": "Mud Pyramid Mosque",
+    "translation": "진흙 피라미드 모스크",
+    "context": ""
+  },{
+    "key": "BUI_Market",
+    "original": "Market",
+    "translation": "시장",
+    "context": ""
+  },{
+    "key": "BUI_Bazaar",
+    "original": "Bazaar",
+    "translation": "바자",
+    "context": ""
+  },{
+    "key": "BUI_Mint",
+    "original": "Mint",
+    "translation": "조폐국",
+    "context": ""
+  },{
+    "key": "BUI_Aqueduct",
+    "original": "Aqueduct",
+    "translation": "송수로",
+    "context": ""
+  },{
+    "key": "BUI_Garden",
+    "original": "Garden",
+    "translation": "정원",
+    "context": ""
+  },{
+    "key": "BUI_Monastery",
+    "original": "Monastery",
+    "translation": "수도원",
+    "context": ""
+  },{
+    "key": "BUI_Workshop",
+    "original": "Workshop",
+    "translation": "작업장",
+    "context": ""
+  },{
+    "key": "BUI_Longhouse",
+    "original": "Longhouse",
+    "translation": "롱하우스",
+    "context": ""
+  },{
+    "key": "BUI_Forge",
+    "original": "Forge",
+    "translation": "대장간",
+    "context": ""
+  },{
+    "key": "BUI_Harbor",
+    "original": "Harbor",
+    "translation": "항만",
+    "context": ""
+  },{
+    "key": "BUI_University",
+    "original": "University",
+    "translation": "대학",
+    "context": ""
+  },{
+    "key": "BUI_Wat",
+    "original": "Wat",
+    "translation": "와트",
+    "context": ""
+  },{
+    "key": "BUI_Castle",
+    "original": "Castle",
+    "translation": "성",
+    "context": ""
+  },{
+    "key": "BUI_Mughal-Fort",
+    "original": "Mughal Fort",
+    "translation": "무굴 요새",
+    "context": ""
+  },{
+    "key": "BUI_Armory",
+    "original": "Armory",
+    "translation": "무기고",
+    "context": ""
+  },{
+    "key": "BUI_Observatory",
+    "original": "Observatory",
+    "translation": "천문대",
+    "context": ""
+  },{
+    "key": "BUI_Opera-House",
+    "original": "Opera House",
+    "translation": "오페라 극장",
+    "context": ""
+  },{
+    "key": "BUI_Bank",
+    "original": "Bank",
+    "translation": "은행",
+    "context": ""
+  },{
+    "key": "BUI_Theatre",
+    "original": "Theatre",
+    "translation": "극장",
+    "context": ""
+  },{
+    "key": "BUI_Seaport",
+    "original": "Seaport",
+    "translation": "항구",
+    "context": ""
+  },{
+    "key": "BUI_Windmill",
+    "original": "Windmill",
+    "translation": "풍차",
+    "context": ""
+  },{
+    "key": "BUI_Museum",
+    "original": "Museum",
+    "translation": "박물관",
+    "context": ""
+  },{
+    "key": "BUI_Public-School",
+    "original": "Public School",
+    "translation": "공립학교",
+    "context": ""
+  },{
+    "key": "BUI_Factory",
+    "original": "Factory",
+    "translation": "공장",
+    "context": ""
+  },{
+    "key": "BUI_Military-Academy",
+    "original": "Military Academy",
+    "translation": "사관 학교",
+    "context": ""
+  },{
+    "key": "BUI_Arsenal",
+    "original": "Arsenal",
+    "translation": "병기창",
+    "context": ""
+  },{
+    "key": "BUI_Hospital",
+    "original": "Hospital",
+    "translation": "병원",
+    "context": ""
+  },{
+    "key": "BUI_Stock-Exchange",
+    "original": "Stock Exchange",
+    "translation": "증권 거래소",
+    "context": ""
+  },{
+    "key": "BUI_Broadcast-Tower",
+    "original": "Broadcast Tower",
+    "translation": "방송탑",
+    "context": ""
+  },{
+    "key": "BUI_Military-Base",
+    "original": "Military Base",
+    "translation": "군사 기지",
+    "context": ""
+  },{
+    "key": "BUI_Research-Lab",
+    "original": "Research Lab",
+    "translation": "연구소",
+    "context": ""
+  },{
+    "key": "BUI_Medical-Lab",
+    "original": "Medical Lab",
+    "translation": "의학 연구소",
+    "context": ""
+  },{
+    "key": "BUI_Stadium",
+    "original": "Stadium",
+    "translation": "경기장",
+    "context": ""
+  },{
+    "key": "BUI_Solar-Plant",
+    "original": "Solar Plant",
+    "translation": "태양열 발전소",
+    "context": ""
+  },{
+    "key": "BUI_Nuclear-Plant",
+    "original": "Nuclear Plant",
+    "translation": "원자력 발전소",
+    "context": ""
+  },{
+    "key": "BUI_Spaceship-Factory",
+    "original": "Spaceship Factory",
+    "translation": "우주선 공장",
+    "context": ""
+  },{
+    "key": "BUI_Stele",
+    "original": "Stele",
+    "translation": "스텔레",
+    "context": ""
+  },{
+    "key": "BUI_Shrine",
+    "original": "Shrine",
+    "translation": "성소",
+    "context": ""
+  },{
+    "key": "BUI_Pyramid",
+    "original": "Pyramid",
+    "translation": "피라미드",
+    "context": ""
+  },{
+    "key": "BUI_Amphitheater",
+    "original": "Amphitheater",
+    "translation": "원형 극장",
+    "context": ""
+  },{
+    "key": "BUI_Ceilidh-Hall",
+    "original": "Ceilidh Hall",
+    "translation": "케일리 홀",
+    "context": ""
+  },{
+    "key": "BUI_Constabulary",
+    "original": "Constabulary",
+    "translation": "경찰대",
+    "context": ""
+  },{
+    "key": "BUI_Coffee-House",
+    "original": "Coffee House",
+    "translation": "카페",
+    "context": ""
+  },{
+    "key": "BUI_Police-Station",
+    "original": "Police Station",
+    "translation": "경찰서",
+    "context": ""
+  },{
+    "key": "BUI_Recycling-Center",
+    "original": "Recycling Center",
+    "translation": "재활용 센터",
+    "context": ""
+  },{
+    "key": "BUI_Bomb-Shelter",
+    "original": "Bomb Shelter",
+    "translation": "방공호",
+    "context": ""
+  },{
+    "key": "BUI_Cathedral",
+    "original": "Cathedral",
+    "translation": "대성당",
+    "context": ""
+  },{
+    "key": "BUI_Mosque",
+    "original": "Mosque",
+    "translation": "모스크",
+    "context": ""
+  },{
+    "key": "BUI_Pagoda",
+    "original": "Pagoda",
+    "translation": "파고다",
+    "context": ""
+  },{
+    "key": "BUI_Hydro-Plant",
+    "original": "Hydro Plant",
+    "translation": "수력 발전소",
+    "context": ""
+  },{
+    "key": "BUI_Satrap's-Court",
+    "original": "Satrap's Court",
+    "translation": "사트레프 관청",
+    "context": ""
+  },{
+    "key": "WON_Alhambra",
+    "original": "Alhambra",
+    "translation": "알함브라 궁전",
+    "context": ""
+  },{
+    "key": "WON_Angkor-Wat",
+    "original": "Angkor Wat",
+    "translation": "앙코르와트",
+    "context": ""
+  },{
+    "key": "WON_Big-Ben",
+    "original": "Big Ben",
+    "translation": "빅 벤",
+    "context": ""
+  },{
+    "key": "WON_Brandenburg-Gate",
+    "original": "Brandenburg Gate",
+    "translation": "브란덴부르크 문",
+    "context": ""
+  },{
+    "key": "WON_Chichen-Itza",
+    "original": "Chichen Itza",
+    "translation": "치첸 이트사",
+    "context": ""
+  },{
+    "key": "WON_CN-Tower",
+    "original": "CN Tower",
+    "translation": "CN 타워",
+    "context": ""
+  },{
+    "key": "WON_Colossus",
+    "original": "Colossus",
+    "translation": "로도스의 거상",
+    "context": ""
+  },{
+    "key": "WON_Cristo-Redentor",
+    "original": "Cristo Redentor",
+    "translation": "구세주 그리스도상",
+    "context": ""
+  },{
+    "key": "WON_Eiffel-Tower",
+    "original": "Eiffel Tower",
+    "translation": "에펠탑",
+    "context": ""
+  },{
+    "key": "WON_Forbidden-Palace",
+    "original": "Forbidden Palace",
+    "translation": "자금성",
+    "context": ""
+  },{
+    "key": "WON_Great-Firewall",
+    "original": "Great Firewall",
+    "translation": "인터넷 검열",
+    "context": ""
+  },{
+    "key": "WON_Great-Mosque-of-Djenne",
+    "original": "Great Mosque of Djenne",
+    "translation": "젠네 모스크",
+    "context": ""
+  },{
+    "key": "WON_Great-Wall",
+    "original": "Great Wall",
+    "translation": "만리장성",
+    "context": ""
+  },{
+    "key": "WON_Hagia-Sophia",
+    "original": "Hagia Sophia",
+    "translation": "아야 소피아",
+    "context": ""
+  },{
+    "key": "WON_Hanging-Gardens",
+    "original": "Hanging Gardens",
+    "translation": "공중 정원",
+    "context": ""
+  },{
+    "key": "WON_Himeji-Castle",
+    "original": "Himeji Castle",
+    "translation": "히메지 성",
+    "context": ""
+  },{
+    "key": "WON_Hubble-Space-Telescope",
+    "original": "Hubble Space Telescope",
+    "translation": "허블 우주 망원경",
+    "context": ""
+  },{
+    "key": "WON_Kremlin",
+    "original": "Kremlin",
+    "translation": "크렘린 궁전",
+    "context": ""
+  },{
+    "key": "WON_Leaning-Tower-of-Pisa",
+    "original": "Leaning Tower of Pisa",
+    "translation": "피사의 탑",
+    "context": ""
+  },{
+    "key": "WON_Machu-Picchu",
+    "original": "Machu Picchu",
+    "translation": "마추픽추",
+    "context": ""
+  },{
+    "key": "WON_Mausoleum-of-Halicarnassus",
+    "original": "Mausoleum of Halicarnassus",
+    "translation": "마우솔로스의 영묘",
+    "context": ""
+  },{
+    "key": "WON_Neuschwanstein",
+    "original": "Neuschwanstein",
+    "translation": "노이슈반슈타인 성",
+    "context": ""
+  },{
+    "key": "WON_Notre-Dame",
+    "original": "Notre Dame",
+    "translation": "노트르담 대성당",
+    "context": ""
+  },{
+    "key": "WON_Pentagon",
+    "original": "Pentagon",
+    "translation": "펜타곤",
+    "context": ""
+  },{
+    "key": "WON_Petra",
+    "original": "Petra",
+    "translation": "페트라",
+    "context": ""
+  },{
+    "key": "WON_Porcelain-Tower",
+    "original": "Porcelain Tower",
+    "translation": "대보은사",
+    "context": ""
+  },{
+    "key": "WON_Sistine-Chapel",
+    "original": "Sistine Chapel",
+    "translation": "시스티나 성당",
+    "context": ""
+  },{
+    "key": "WON_Statue-of-Liberty",
+    "original": "Statue of Liberty",
+    "translation": "자유의 여신상",
+    "context": ""
+  },{
+    "key": "WON_Statue-of-Zeus",
+    "original": "Statue of Zeus",
+    "translation": "제우스 동상",
+    "context": ""
+  },{
+    "key": "WON_Stonehenge",
+    "original": "Stonehenge",
+    "translation": "스톤헨지",
+    "context": ""
+  },{
+    "key": "WON_Sydney-Opera-House",
+    "original": "Sydney Opera House",
+    "translation": "시드니 오페라 하우스",
+    "context": ""
+  },{
+    "key": "WON_Taj-Mahal",
+    "original": "Taj Mahal",
+    "translation": "타지마할",
+    "context": ""
+  },{
+    "key": "WON_Temple-of-Artemis",
+    "original": "Temple of Artemis",
+    "translation": "아르테미스 사원",
+    "context": ""
+  },{
+    "key": "WON_Terracotta-Army",
+    "original": "Terracotta Army",
+    "translation": "병마용",
+    "context": ""
+  },{
+    "key": "WON_The-Great-Library",
+    "original": "The Great Library",
+    "translation": "알렉산드리아 도서관",
+    "context": ""
+  },{
+    "key": "WON_The-Great-Lighthouse",
+    "original": "The Great Lighthouse",
+    "translation": "알렉산드리아 등대",
+    "context": ""
+  },{
+    "key": "WON_The-Louvre",
+    "original": "The Louvre",
+    "translation": "루브르 박물관",
+    "context": ""
+  },{
+    "key": "WON_The-Oracle",
+    "original": "The Oracle",
+    "translation": "오라클",
+    "context": ""
+  },{
+    "key": "WON_The-Pyramids",
+    "original": "The Pyramids",
+    "translation": "피라미드",
+    "context": ""
+  },{
+    "key": "WON_United-Nations",
+    "original": "United Nations",
+    "translation": "국제 연합",
+    "context": ""
+  },{
+    "key": "WON__A_'Justice-is-an-unassailable-fortress,-built-on-the-brow-of-a-mountain-which-cannot-be-overthrown-by-the-violence-of-torrents,-nor-demolished-by-the-force-of-armies.'---Joseph-Addison",
+    "original": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison",
+    "translation": "'정의란 급류나 군대로도 무너트릴 수 없는 산꼭대기에 세운 무적의 요새다.' - 조저프 에디슨",
+    "context": ""
+  },{
+    "key": "WON__A_'The-temple-is-like-no-other-building-in-the-world.-It-has-towers-and-decoration-and-all-the-refinements-which-the-human-genius-can-conceive-of.'---Antonio-da-Magdalena",
+    "original": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena",
+    "translation": "'세상에 또 이런 건물은 없을 것이다. 탑이 있고 장식이 있으며 인간의 재주로 생각할 수 있는 기교란 기교는 다 있다.' - 안토니오 데 막달레나",
+    "context": ""
+  },{
+    "key": "WON__A_'To-achieve-great-things,-two-things-are-needed:-a-plan,-and-not-quite-enough-time.'---Leonard-Bernstein",
+    "original": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein",
+    "translation": "'위대한 업적을 이루려면 두 가지가 필요하다. 하나는 계획이고, 하나는 적당히 빠듯한 시간이다.' - 레너드 번스타인",
+    "context": ""
+  },{
+    "key": "WON__A_'Pale-Death-beats-equally-at-the-poor-man's-gate-and-at-the-palaces-of-kings.'---Horace",
+    "original": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace",
+    "translation": "'창백한 죽음은 가난한 자의 문과 왕의 궁전을 똑같이 두드린다.' - 호라티우스",
+    "context": ""
+  },{
+    "key": "WON__A_'The-katun-is-established-at-Chichen-Itza.-The-settlement-of-the-Itza-shall-take-place-there.-The-quetzal-shall-come,-the-green-bird-shall-come.-Ah-Kantenal-shall-come.-It-is-the-word-of-God.-The-Itza-shall-come.'---The-Books-of-Chilam-Balam",
+    "original": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam",
+    "translation": "'치첸 이사에 카툰이 서리라. 이사가 그곳에 정착하리라. 케살이 오리라, 푸른 새가 오리라. 아 칸테날이 오리라. 이는 신의 말씀이라. 이사가 오리라.' - 칠람 발람의 서",
+    "context": ""
+  },{
+    "key": "WON__A_'Nothing-travels-faster-than-light-with-the-possible-exception-of-bad-news,-which-obeys-its-own-special-rules.'---Douglas-Adams",
+    "original": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams",
+    "translation": "'물리학에서 빛보다 빠른 물체는 없다. 그러나 나쁜 소식은 빛보다 빠를 수 있다. 이는 소식이 퍼지는 데 특별한 법칙이 적용되기 때문이다.' - 더글라스 애덤스",
+    "context": ""
+  },{
+    "key": "WON__A_'Why-man,-he-doth-bestride-the-narrow-world-like-a-colossus,-and-we-petty-men-walk-under-his-huge-legs,-and-peep-about-to-find-ourselves-dishonorable-graves.'---William-Shakespeare,-Julius-Caesar",
+    "original": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar",
+    "translation": "'그는 그 좁은 세상에 거신상처럼 우뚝 서 있고, 우리 하찮은 자들은 그 거대한 다리 사이를 지나다니며 부끄러운 무덤자리를 봐두려고 주변을 힐끔거리지.'-윌리엄 셰익스피어, 줄리어스 시저 1막 2장",
+    "context": ""
+  },{
+    "key": "WON__A_'Come-to-me,-all-who-labor-and-are-heavy-burdened,-and-I-will-give-you-rest.'---New-Testament,-Matthew-11:28",
+    "original": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28",
+    "translation": "'고생하며 무거운 짐을 진 너희는 모두 나에게 오너라. 내가 너희에게 안식을 주겠다.' - 성경, 마태복음 11:28",
+    "context": ""
+  },{
+    "key": "WON__A_'We-live-only-to-discover-beauty,-all-else-is-a-form-of-waiting'---Kahlil-Gibran",
+    "original": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran",
+    "translation": "'우리 삶의 유일한 목적은 아름다움을 발견하는 것이다. 다른 모든 것은 일종의 기다림이다.' - 칼릴 지브란",
+    "context": ""
+  },{
+    "key": "WON__A_'Most-of-us-can,-as-we-choose,-make-of-this-world-either-a-palace-or-a-prison'---John-Lubbock",
+    "original": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock",
+    "translation": "'우리 대부분은 마음 먹기에 따라 세상을 궁궐로 만들 수도 있고 감옥으로 만들 수도 있다.' - 존 러벅",
+    "context": ""
+  },{
+    "key": "WON__A_'With-the-magnificence-of-eternity-before-us,-let-time,-with-all-its-fluctuations,-dwindle-into-its-own-littleness.'---Thomas-Chalmers",
+    "original": "'With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.' - Thomas Chalmers",
+    "translation": "'무한이라는 장엄한 개념 앞에서 변동이 심한 시간이라는 개념은 작아질 수밖에 없다.' - 토마스 챌머스",
+    "context": ""
+  },{
+    "key": "WON__A_'The-art-of-war-teaches-us-to-rely-not-on-the-likelihood-of-the-enemy's-not-attacking,-but-rather-on-the-fact-that-we-have-made-our-position-unassailable.'---Sun-Tzu",
+    "original": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu",
+    "translation": "'병법은 적군이 쳐들어오지 않기를 바라는 것이 아니라, 적군이 우리를 공격할 엄두가 나지 않을 방비 태세에 의지해야 하는 것이다.' - 손자",
+    "context": ""
+  },{
+    "key": "WON__A_'For-it-soars-to-a-height-to-match-the-sky,-and-as-if-surging-up-from-among-the-other-buildings-it-stands-on-high-and-looks-down-upon-the-remainder-of-the-city,-adorning-it,-because-it-is-a-part-of-it,-but-glorying-in-its-own-beauty'---Procopius,-De-Aedificis",
+    "original": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis",
+    "translation": "'하늘에 닿을 만큼 높이 솟아, 마치 다른 건물들의 복판에서 바로 솟아난 듯 높은 곳에 서서 도시를 내려다보며, 도시의 일부로서 도시를 장식하는 한편으로 그 자체의 아름다움으로 찬연히 빛나고 있다.' - 프로코피오스",
+    "context": ""
+  },{
+    "key": "WON__A_'I-think-that-if-ever-a-mortal-heard-the-word-of-God-it-would-be-in-a-garden-at-the-cool-of-the-day.'---F.-Frankfort-Moore",
+    "original": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore",
+    "translation": "'만에 하나 인간이 신의 말씀을 듣게 된다면, 그것은 서늘한 아침 정원에서일 것이다.' - F. 프랭크포트 무어",
+    "context": ""
+  },{
+    "key": "WON__A_'Bushido-is-realized-in-the-presence-of-death.-This-means-choosing-death-whenever-there-is-a-choice-between-life-and-death.-There-is-no-other-reasoning.'---Yamamoto-Tsunetomo",
+    "original": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo",
+    "translation": "'무사도는 죽음을 마주했을 때 실현된다. 즉, 삶과 죽음의 기로에서 죽음을 택한다는 뜻이다. 다른 생각의 여지는 없다.' - 야마모토 츠네모토",
+    "context": ""
+  },{
+    "key": "WON__A_'The-wonder-is,-not-that-the-field-of-stars-is-so-vast,-but-that-man-has-measured-it.'---Anatole-France",
+    "original": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France",
+    "translation": "'진정한 불가사의는 우주의 방대한 크기가 아니라 인간이 그 크기를 측정했다는 사실이다.' - 아나톨 프랑스",
+    "context": ""
+  },{
+    "key": "WON__A_'The-Kremlin-is-constantly-changing-the-rules-of-the-game-to-suit-its-purposes.-We-are-not-playing-chess,-we're-playing-roulette.'---Garry-Kasparov",
+    "original": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov",
+    "translation": "'크렘린 궁전은 끊임없이 목적에 맞추기 위해 규칙을 바꾸어 왔다. 우리는 체스를 하는 것이 아니다. 룰렛을 돌리는 거지.' - 게리 카스파로프",
+    "context": ""
+  },{
+    "key": "WON__A_'Don't-clap-too-hard---it's-a-very-old-building.'---John-Osbourne",
+    "original": "'Don't clap too hard - it's a very old building.' - John Osbourne",
+    "translation": "'아주 오래된 건물이니까, 너무 세게 손뼉 치지 마십시오.' - 존 오스본",
+    "context": ""
+  },{
+    "key": "WON__A_'Few-romances-can-ever-surpass-that-of-the-granite-citadel-on-top-of-the-beetling-precipices-of-Machu-Picchu,-the-crown-of-Inca-Land.'---Hiram-Bingham",
+    "original": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham",
+    "translation": "'잉카 땅의 정수 마추픽추의 들쭉날쭉한 벼랑 위에 우뚝 선 화강암 도시의 낭만보다 더한 낭만은 잘 없을 것이다.' - 하이람 빙엄",
+    "context": ""
+  },{
+    "key": "WON__A_'The-whole-earth-is-the-tomb-of-heroic-men-and-their-story-is-not-given-only-on-stone-over-their-clay-but-abides-everywhere-without-visible-symbol-woven-into-the-stuff-of-other-men's-lives.'---Pericles",
+    "original": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles",
+    "translation": "'전 지구는 영웅적인 사람들의 무덤이며 그들의 이야기는 그들의 흙 위에 있는 돌 위에만 주어지는 것이 아니라 다른 사람들의 삶의 물건에 짜여진 가시적인 상징 없이 사방에 걸쳐 있다.' - 페리클레스",
+    "context": ""
+  },{
+    "key": "WON__A_'...the-location-is-one-of-the-most-beautiful-to-be-found,-holy-and-unapproachable,-a-worthy-temple-for-the-divine-friend-who-has-brought-salvation-and-true-blessing-to-the-world.'---King-Ludwig-II-of-Bavaria",
+    "original": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria",
+    "translation": "'…아름답고 성스럽고 범접할 수 없는 곳에 있다. 세상을 구원하고 축복하러 온 신성한 친구에게 어울리는 곳이다.' - 루트비히 2세",
+    "context": ""
+  },{
+    "key": "WON__A_'Architecture-has-recorded-the-great-ideas-of-the-human-race.-Not-only-every-religious-symbol,-but-every-human-thought-has-its-page-in-that-vast-book.'---Victor-Hugo",
+    "original": "'Architecture has recorded the great ideas of the human race. Not only every religious symbol, but every human thought has its page in that vast book.' - Victor Hugo",
+    "translation": "'건축은 항상 인류의 뛰어난 발상을 기록으로 남겼다. 종교적 상징 하나하나가, 그뿐 아니라 인간의 생각 하나하나가 그 방대한 책의 한 페이지를 차지하고 있다.' - 빅토르 위고",
+    "context": ""
+  },{
+    "key": "WON__A_'In-preparing-for-battle-I-have-always-found-that-plans-are-useless,-but-planning-is-indispensable.'---Dwight-D.-Eisenhower",
+    "original": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower",
+    "translation": "'나는 전투 준비에 있어서, 계획은 아무 쓸모가 없지만 계획을 세우는 일은 꼭 필요하다는 사실을 늘 깨닫게 된다.' - 드와이트 D. 아이젠하워",
+    "context": ""
+  },{
+    "key": "WON__A_'...who-drinks-the-water-I-shall-give-him,-says-the-Lord,-will-have-a-spring-inside-him-welling-up-for-eternal-life.-Let-them-bring-me-to-your-holy-mountain-in-the-place-where-you-dwell.-Across-the-desert-and-through-the-mountain-to-the-Canyon-of-the-Crescent-Moon...'---Indiana-Jones",
+    "original": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones",
+    "translation": "'...내가 주는 물을 마시는 자는 불로장생할 것이니 사람들이 나를 네가 있는 성스러운 산으로 인도하도록 할지어다. 사막을 가로지르고 산을 넘으면 초승달 계곡이 나오는데...' - 인디아나 존스",
+    "context": ""
+  },{
+    "key": "WON__A_'Things-always-seem-fairer-when-we-look-back-at-them,-and-it-is-out-of-that-inaccessible-tower-of-the-past-that-Longing-leans-and-beckons.'---James-Russell-Lowell",
+    "original": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell",
+    "translation": "'만사는 지나고 나서 돌아보면 더 좋아보이며, 바로 그 다가갈 수 없는 과거의 탑으로부터 동경은 몸을 내밀어 우리를 부른다.' - 제임스 러셀 로웰",
+    "context": ""
+  },{
+    "key": "WON__A_'I-live-and-love-in-God's-peculiar-light.'---Michelangelo-Buonarroti",
+    "original": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti",
+    "translation": "'나는 신의 경이로운 빛 속에서 살며 사랑한다.' - 미켈란젤로 부오나로티",
+    "context": ""
+  },{
+    "key": "WON__A_'Give-me-your-tired,-your-poor,-your-huddled-masses-yearning-to-breathe-free,-the-wretched-refuse-of-your-teeming-shore.-Send-these,-the-homeless,-tempest-tossed-to-me,-I-lift-my-lamp-beside-the-golden-door!'---Emma-Lazarus",
+    "original": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus",
+    "translation": "'고단한 자여, 가난한 자여, 자유로이 숨 쉬고자 하는 군중이여, 내게로 오라. 너희 들끓는 해변의 초라한 자여, 갈 곳이 없는 자여, 폭풍에 휩쓸린 자여, 내게로 오라. 내가 황금 문 옆에 등불을 높이 쳐들리라!' - 엠마 라자루스",
+    "context": ""
+  },{
+    "key": "WON__A_'He-spoke,-the-son-of-Kronos,-and-nodded-his-head-with-the-dark-brows,-and-the-immortally-anointed-hair-of-the-great-god-swept-from-his-divine-head,-and-all-Olympos-was-shaken'---The-Iliad",
+    "original": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad",
+    "translation": "'크로노스의 아들인 그가 말하고, 어두운 눈썹을 찡그리며 고개를 끄덕였고, 불멸의 기름이 발라진 위대한 신의 머리카락이 신의 머리에서 쓸려나갔고, 모든 올림포스가 흔들렸다.' - 일리아드",
+    "context": ""
+  },{
+    "key": "WON__A_'Time-crumbles-things;-everything-grows-old-and-is-forgotten-under-the-power-of-time'---Aristotle",
+    "original": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle",
+    "translation": "'사물은 시간과 함께 스러진다. 시간의 힘 아래 만물이 늙어가고 잊혀진다.' - 아리스토텔레스",
+    "context": ""
+  },{
+    "key": "WON__A_'Those-who-lose-dreaming-are-lost.'---Australian-Aboriginal-saying",
+    "original": "'Those who lose dreaming are lost.' - Australian Aboriginal saying",
+    "translation": "'꿈을 잃어버리면 길도 잃는다.' - 호주 원주민 속담",
+    "context": ""
+  },{
+    "key": "WON__A_'The-Taj-Mahal-rises-above-the-banks-of-the-river-like-a-solitary-tear-suspended-on-the-cheek-of-time.'---Rabindranath-Tagore",
+    "original": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore",
+    "translation": "'타지마할은, 시간의 뺨에 흐르는 눈물 한 방울과도 같이 강둑 위로 솟아있다.' - 라빈드라나트 타고르",
+    "context": ""
+  },{
+    "key": "WON__A_'It-is-not-so-much-for-its-beauty-that-the-forest-makes-a-claim-upon-men's-hearts,-as-for-that-subtle-something,-that-quality-of-air,-that-emanation-from-old-trees,-that-so-wonderfully-changes-and-renews-a-weary-spirit.'---Robert-Louis-Stevenson",
+    "original": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson",
+    "translation": "'인간이 숲을 동경하는 이유는 그저 숲이 아름다워서가 아니라 오래된 숲의 고목에서 뿜어져 나오는 공기에 존재하는 미묘한 무엇인가가 사람의 지친 영혼에 활기를 불어넣어 주고 회복시켜 주기 때문이다.' - 로버트 루이스 스티븐슨",
+    "context": ""
+  },{
+    "key": "WON__A_'Regard-your-soldiers-as-your-children,-and-they-will-follow-you-into-the-deepest-valleys;-look-on-them-as-your-own-beloved-sons,-and-they-will-stand-by-you-even-unto-death.'---Sun-Tzu",
+    "original": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu",
+    "translation": "'병사를 자식처럼 부르면 어디든 따를 것이다. 병사를 사랑하는 자식 대하듯 하면 목숨을 바쳐 충성할 것이다.' - 손자",
+    "context": ""
+  },{
+    "key": "WON__A_'Libraries-are-as-the-shrine-where-all-the-relics-of-the-ancient-saints,-full-of-true-virtue,-and-all-that-without-delusion-or-imposture-are-preserved-and-reposed.'---Sir-Francis-Bacon",
+    "original": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon",
+    "translation": "'도서관은, 진정한 미덕으로 가득한 고대 현인의 모든 유물이, 그리고 현혹과 기만이 없는 모든 것이 보존되어 안식하는 신전이다.' - 프랜시스 베이컨 경",
+    "context": ""
+  },{
+    "key": "WON__A_'They-that-go-down-to-the-sea-in-ships,-that-do-business-in-great-waters;-these-see-the-works-of-the-Lord,-and-his-wonders-in-the-deep.'---The-Bible,-Psalms-107:23-24",
+    "original": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24",
+    "translation": "'배들을 바다에 띄우며 큰 물에서 일을 하는 자는 여호와께서 행하신 일들과 그의 기이한 일들을 깊은 바다에서 보나니.' - 성경, 시편 107:23-24",
+    "context": ""
+  },{
+    "key": "WON__A_'Every-genuine-work-of-art-has-as-much-reason-for-being-as-the-earth-and-the-sun'---Ralph-Waldo-Emerson",
+    "original": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson",
+    "translation": "'진실한 예술품의 존재 가치는 지구와 태양의 존재 가치와 같다.' - 랄프 왈도 에머슨",
+    "context": ""
+  },{
+    "key": "WON__A_'The-ancient-Oracle-said-that-I-was-the-wisest-of-all-the-Greeks.-It-is-because-I-alone,-of-all-the-Greeks,-know-that-I-know-nothing'---Socrates",
+    "original": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates",
+    "translation": "'고대 오라클은 내가 그리스에서 가장 현명하다 하였다. 그것은, 모든 그리스인 중 나만이, 내가 아무것도 모른다는 사실을 알기 때문이다.' - 소크라테스",
+    "context": ""
+  },{
+    "key": "WON__A_'O,-let-not-the-pains-of-death-which-come-upon-thee-enter-into-my-body.-I-am-the-god-Tem,-and-I-am-the-foremost-part-of-the-sky,-and-the-power-which-protecteth-me-is-that-which-is-with-all-the-gods-forever.'---The-Book-of-the-Dead,-translated-by-Sir-Ernest-Alfred-Wallis-Budge",
+    "original": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge",
+    "translation": "'오, 그대에게 찾아온 죽음의 고통이 나의 육체에 들지 않기를. 나는 템 신으로서, 하늘 꼭대기에 거하며, 영원히 모든 신과 함께 하는 힘이 나를 보호할지니.' - 사자의 서, E.A. 월리스 버지 경 역",
+    "context": ""
+  },{
+    "key": "WON__A_'More-than-ever-before-in-human-history,-we-share-a-common-destiny.-We-can-master-it-only-if-we-face-it-together.-And-that-is-why-we-have-the-United-Nations.'---Kofi-Annan",
+    "original": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan",
+    "translation": "우리는 인류 역사상 어느 때보다도 운명 공동체가 되었다. 그 운명에 함께 맞서야만 운명을 지배할 수 있다. 그리고 그것이 바로 국제 연합의 존재 이유다 - 코피 아난",
+    "context": ""
+  },{
+    "key": "NWO_Apollo-Program",
+    "original": "Apollo Program",
+    "translation": "아폴로 프로그램",
+    "context": ""
+  },{
+    "key": "NWO_Circus-Maximus",
+    "original": "Circus Maximus",
+    "translation": "원형 경기장",
+    "context": ""
+  },{
+    "key": "NWO_Grand-Temple",
+    "original": "Grand Temple",
+    "translation": "대사원",
+    "context": ""
+  },{
+    "key": "NWO_Hermitage",
+    "original": "Hermitage",
+    "translation": "에르미타주 박물관",
+    "context": ""
+  },{
+    "key": "NWO_Heroic-Epic",
+    "original": "Heroic Epic",
+    "translation": "영웅적 서사시",
+    "context": ""
+  },{
+    "key": "NWO_Ironworks",
+    "original": "Ironworks",
+    "translation": "제철소",
+    "context": ""
+  },{
+    "key": "NWO_Manhattan-Project",
+    "original": "Manhattan Project",
+    "translation": "맨해튼 프로젝트",
+    "context": ""
+  },{
+    "key": "NWO_National-College",
+    "original": "National College",
+    "translation": "국립대학",
+    "context": ""
+  },{
+    "key": "NWO_National-Epic",
+    "original": "National Epic",
+    "translation": "건국 서사시",
+    "context": ""
+  },{
+    "key": "NWO_National-Intelligence-Agency",
+    "original": "National Intelligence Agency",
+    "translation": "국가 정보국",
+    "context": ""
+  },{
+    "key": "NWO_National-Treasury",
+    "original": "National Treasury",
+    "translation": "국고",
+    "context": ""
+  },{
+    "key": "NWO_Oxford-University",
+    "original": "Oxford University",
+    "translation": "옥스퍼드 대학",
+    "context": ""
+  },{
+    "key": "NWO_Palace",
+    "original": "Palace",
+    "translation": "궁전",
+    "context": ""
+  },{
+    "key": "NWO_Utopia-Project",
+    "original": "Utopia Project",
+    "translation": "유토피아 프로젝트",
+    "context": ""
+  }
+]

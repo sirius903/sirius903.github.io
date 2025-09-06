@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="lab">
+        <div id="playing-bar">
+            <label for="fps" class="playing-labels">FPS</label>
+            <input placeholder="fps" id="fps" class="playing-inputs" min="1" max="1000" type="number" value="50">
+            <label for="meter" class="playing-labels">Size</label>
+            <input placeholder="Size" id="meter" class="playing-inputs" min="50" max="10000" type="number" value="150">
+            <div class="playing-btns" id="reset"><img src="../../images/reset.svg"></div>
+            <div class="playing-btns" id="play"><img src="../../images/play.svg"></div>
+            <div class="playing-btns" id="stop"><img src="../../images/stop.svg"></div>
+            <div class="playing-btns speed">x⅒</div>
+            <div class="playing-btns speed">x¼</div>
+            <div class="playing-btns speed">x½</div>
+            <div class="playing-btns speed">x1</div>
+            <div class="playing-btns speed">x2</div>
+            <div class="playing-btns speed">x5</div>
+            <div class="playing-btns" id="initialize">↻</div>
+            <div id="back-btn">Back</div>
+        </div>
+        <div id="content">
+            <canvas id="canvas" width="1500px" height="1500px" style="width: 500px;"></canvas>
+            <div id="resizer">||</div>
+            <div id="configs" style="width: calc(100vw - 510px);">
+                <section class="converts">
+                    <h1>Gravity</h1>
+                    <form onsubmit="return false;">
+                     <label for="gravity-input" title="Gravitational force">G-force</label>
+                     <input type="number" placeholder="9.8" value="9.8" id="gravity-input" min="-100" max="100" step="0.1" onchange="change(0, this.value);" title="Converts G-force(Default : 9.8)">
+                     <input type="reset" value="reset" onclick="change(0, 9.8)" title="Resets G-force(Default : 9.8)">
+                     <input type="submit" value="submit" onclick="change(0, document.getElementById('gravity-input').value);" title="G-force Conversion Button">
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Spring</h1>
+                    <form onsubmit="return false;">
+                     <label for="spring-width" title="The Width of The Spring">Width</label>
+                     <input type="number" placeholder="1" value="1" id="spring-width" min="0.1" max="100" step="0.1" onchange="change(1, this.value);" title="Converts The Width of The Spring(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(1, 1);" title="Resets The Width(Default : 1)">
+                     <input type="submit" value="submit" onclick="change(1, document.getElementById('spring-width').value);" title="The Width Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="spring-height" title="The Height of The Spring">Height</label>
+                     <input type="number" placeholder="1" value="1" id="spring-height" min="0.1" max="100" step="0.1" onchange="change(2, this.value)" title="Converts The Height of The Spring(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(2, 1);" title="Resets The Height(Default : 1)">
+                     <input type="submit" value="submit" onclick="change(2, document.getElementById('spring-height').value)" title="The height Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="spring-energy" title="The Elastic Energy of The Spring">Elastic Energy</label>
+                     <input type="number" placeholder="50" value="50" id="spring-energy" min="0" max="1000" step="0.1" onchange="change(3, this.value)" title="Converts The Elastic Energy of The Spring(Default : 50)">
+                     <input type="reset" value="reset" onclick="change(3, 50);" title="Resets The Elastic Energy(Default : 50)">
+                     <input type="submit" value="submit" onclick="change(3, document.getElementById('spring-energy').value);" title="The Elastic Energy Conversion Button"><br>
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Marble</h1>
+                    <form onsubmit="return false;">
+                     <label for="marble-radius" title="The Radius of The Marble">Radius</label>
+                     <input type="number" placeholder="0.25" value="0.25" id="marble-radius" min="0.01" max="1" step="0.01" onchange="change(4, this.value);" title="Converts The Radius of The Marble(Default : 0.25)">
+                     <input type="reset" value="reset" onclick="change(4, 0.25);" title="Resets The Radius(Default : 0.25)">
+                     <input type="submit" value="submit" onclick="change(4, document.getElementById('marble-radius').value);" title="The Radius Conversion Button"><br>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label for="marble-mass" title="The Mass of The Marble">Mass</label>
+                     <input type="number" placeholder="1" value="1" id="marble-mass" min="0.1" max="100" step="0.1" onchange="change(5, this.value);" title="Converts The Mass of The Marble(Default : 1)">
+                     <input type="reset" value="reset" onclick="change(5, 1)" title="Resets The Mass(Default : 1)">
+                     <input type="submit" value="submit" onclick="v = change(5, document.getElementById('marble-mass').value);" title="The Mass Conversion Button"><br>
+                    </form>
+                </section>
+                <section class="converts">
+                    <h1>Track</h1>
+                    <form onsubmit="return false;">
+                     <label for="track-start" title="The Start Point of The Track">Start Point</label>
+                     <input type="number" placeholder="3" value="3" id="track-start" min="0" max="100" step="0.1" onchange="change(6, this.value);" title="Converts The Start Point of The Track(Default : 3)">
+                     <input type="reset" value="reset" onclick="change(6, 3);" title="Resets The Start Point(Default : 3)">
+                     <input type="submit" value="submit" onclick="change(6, document.getElementById('track-start').value);" title="The Start Point Conversion Button"><br>
+                    </form>
+                    <label onclick="change(7, 0);">
+                        <input type="radio" name="track-type" class="track-type" checked>
+                        <span>𝓍</span>
+                    </label>
+                    <label onclick="change(7, 1);">
+                        <input type="radio" name="track-type" class="track-type">
+                        <span>𝓍²</span>
+                    </label>
+                    <label onclick="change(7, 2);">
+                        <input type="radio" name="track-type" class="track-type">
+                        <span>√𝓍</span>
+                    </label>
+                    <label onclick="change(7, 3);">
+                        <input type="radio" name="track-type" class="track-type">
+                        <span>2sin𝓍 + 𝓍</span>
+                    </label>
+                </section>
+                <section class="converts">
+                    <h1>Results</h1>
+                    <form onsubmit="return false;">
+                     <label title="X-coordinate of The Marble">X-coordinate</label>
+                     <input type="number" value="1.25" id="x-coordinate" title="X-coordinate of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Y-coordinate of The Marble">Y-coordinate</label>
+                     <input type="number" value="0.5" id="y-coordinate" title="Y-coordinate of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Maximum Height of The Marble">Maximum Height</label>
+                     <input type="number" value="0.5" id="maximum-height" title="Maximum Height of The Marble" disabled>
+                     <input type="reset" value="reset" onclick="maximum = 0;" title="Resets Maximum Height">
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Velocity of The Marble">Velocity</label>
+                     <input type="number" value="0" id="velocity" title="Velocity of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Kinetic Energy of The Marble">Kinetic Energy</label>
+                     <input type="number" value="0" id="kinetic-energy" title="Kinetic Energy of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Potential Energy of The Marble">Potential Energy</label>
+                     <input type="number" value="0" id="potential-energy" title="Potential Energy of The Marble" disabled>
+                    </form>
+                    <form onsubmit="return false;">
+                     <label title="Dynamics Energy of The Marble">Dynamics Energy</label>
+                     <input type="number" value="0" id="dynamics-energy" title="Dynamics Energy of The Marble" disabled>
+                    </form>
+                </section>
+                <canvas id="graph"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../../config.js"></script>
+    <script src="../../resizer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

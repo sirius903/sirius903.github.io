@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="title" title="2023 범어제" onclick="window.location.href = '';">
+            <div id="title1" class="title">2</div>
+            <div id="title2" class="title">0</div>
+            <div id="title3" class="title">2</div>
+            <div id="title4" class="title">3</div>
+            <div id="title5" class="title">범어제</div>
+        </div>
+        <div id="entry">
+            <div class="entry" id="log-in" onclick="window.location.href = './entry/?log-in?';">로그인</div>
+            <div class="entry" id="sign-up" onclick="window.location.href = './entry/?sign-up?';">회원가입</div>
+        </div>
+        <div id="profile" class="hidden">
+            <div id="name"><!-- 설마 이거 뜯어 본 놈 없지? --></div>
+            <div id="rank"><!-- ...설마 --></div>
+            <div id="point"><!-- 진짜 뜯다가 걸리면... --></div>
+            <div class="entry" id="log-out">로그아웃</div>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title">CODE 동아리</h1>
+        <div id="contents">
+            <div class="contents" id="CODE" onclick="window.location.href = 'CODE';">
+                <h1 id="CODE-title">CODE<div>¦</div></h1>
+                <img src="images/CODE.jpg">
+                <p>CODE는 텍스트로 만들어진 퍼즐 게임으로, 간단한 조작으로 플레이할 수 있습니다.</p>
+                <p>새로운 기록에 도전해 보세요!</p>
+            </div>
+            <div class="contents" id="Chat" onclick="window.location.href = 'Chat';">
+                <h1 id="Chat-title">Chat</h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>평범한 대화창</p>
+            </div>
+            <!-- <div class="contents" id="Key-Down" onclick="window.location.href = 'Key-Down';">
+                <h1 id="Key-Down-title">Key-Down</h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>Key-Down은 뒤집혀서 제시된 제시어를 원래의 방향대로 입력하면 되는 게임입니다.</p>
+            </div> -->
+            <!-- <div class="contents" id="Searcher" onclick="window.location.href = 'Searcher';">
+                <h1>Searcher!</h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>타자 게임</p>
+            </div>
+            <div class="contents">
+                <h1>MEMORY</h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>타자 게임</p>
+            </div>
+            <div class="contents" id="shorten">
+                <h1 id="shorten-title">Shooorten</h1>
+                <img src="images/1.png">
+                <p>타자 게임</p>
+            </div>
+            <div class="contents" id="BlackCyan">
+                <h1 id="BlackCyan-title"><div class="f">Black</div><div>Cyan</div></h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>타자 게임</p>
+            </div>
+            <div class="contents hidden" id="seven" onclick="window.location.href = '777';">
+                <h1 id="seven-title"><div class="n1">7</div><div class="n2">7</div><div class="n3">7</div></h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>타자 게임</p>
+            </div>
+            <div class="contents" id="bank" onclick="window.location.href = 'Bank'">
+                <h1>Bank</h1>
+                <img src="https://fastly.picsum.photos/id/467/300/200.jpg?hmac=tJDRhyeGvz81FbRbg0aMhCZsHfJeh3PdgxS5xmYrrqY">
+                <p>타자 게임</p>
+            </div> -->
+        </div>
+        <hr>
+        <h1 class="main-title">랭킹</h1>
+        <div class="content">
+            <div id="rankings">
+                <!-- <div class="ranks"></div> -->
+            </div>
+            <div id="rank_btn"></div>
+            <!--  -->
+        </div>
+    </main>
+    <footer>
+        <div id="info">
+            <h1 id="footer-title">CODE</h1>
+            <div id="contact">
+                <p>부장 : 20621 염규원</p>
+                <p>전화 : 010-8680-4037</p>
+            </div>
+        </div>
+        <select id="thema" onchange="darkmode();">
+            <option id="light-mode" selected>밝은 배경</option>
+            <option id="dark-mode">어두운 배경</option>
+            <option id="credit">크레딧</option>
+        </select>
+    </footer>
+    <script src="thema.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module">
+        import { rank } from './main.js';
+
+        function ranking(array){
+            document.getElementById('rankings').innerHTML = '';
+            document.getElementById('rank_btn').innerHTML = '';
+            for(let i = 0; i < Math.ceil(array.length / 10); i++){
+                document.getElementById('rankings').innerHTML += `<div class="rankings hidden"></div>`;
+                document.getElementById('rank_btn').innerHTML += `<div class="rank_btn">${i + 1}</div>`;
+            }
+            array.sort((a, b) => b.point - a.point).forEach((a, i) => {
+                document.querySelectorAll('.rankings')[Math.floor(i / 10)].innerHTML += `
+                <div class="ranks">
+                    <div class="rank">${i + 1 + '위'}</div>
+                    <div class="name">${a.id}</div>
+                    <div class="point">${a.point} pt</div>
+                </div>`;
+            });
+            document.querySelector('.rankings').className = 'rankings';
+            document.querySelectorAll('.rank_btn').forEach((a, i) => {
+                a.addEventListener("click", function(){
+                    document.querySelectorAll('.rankings').forEach(b => {
+                        b.className = 'rankings hidden';
+                    })
+                    document.querySelectorAll('.rankings')[i].className = 'rankings';
+                })
+            })
+        }
+        rank(ranking);
+    </script>
+    <script src="sha256.js"></script>
+</body>
+</html>
