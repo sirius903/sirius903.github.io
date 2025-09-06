@@ -1,0 +1,208 @@
+
+body {
+	margin: 0;
+	font-family: 'Noto Sans KR', Arial, sans-serif;
+	background: #f7f7fa;
+	color: #222;
+	overflow-x: hidden;
+}
+
+#main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	height: 64px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.header-logo {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2a4d8f;
+}
+.header-nav a {
+	margin-left: 2rem;
+	text-decoration: none;
+	color: #2a4d8f;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.header-nav a:hover {
+	color: #1a2d4f;
+}
+
+#main-banner {
+	position: relative;
+	width: 100%;
+	max-width: 100vw;
+	height: 40vw;
+	min-height: 320px;
+	max-height: 480px;
+	background: #eaf0fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.banner-image {
+	width: 100%;
+	max-width: 100vw;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.85;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.banner-tags {
+	position: absolute;
+	top: 32px;
+	left: 48px;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	max-width: calc(100vw - 96px);
+}
+.banner-tags .tag {
+	display: inline-block;
+	background: #2a4d8f;
+	color: #fff;
+	border-radius: 16px;
+	padding: 0.5em 1.2em;
+	margin-right: 0.5em;
+	font-size: 1.1em;
+	font-weight: 500;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.insta-link {
+	position: absolute;
+	right: 48px;
+	bottom: 32px;
+	z-index: 2;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 0.5em;
+	transition: box-shadow 0.2s;
+	max-width: 48px;
+}
+.insta-link:hover {
+	box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.insta-logo {
+	width: 40px;
+	height: 40px;
+	display: block;
+	object-fit: contain;
+	filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+}
+
+#main-content {
+	max-width: 800px;
+	margin: 48px auto 32px auto;
+	padding: 0 1.5rem;
+}
+.club-description {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	padding: 2rem;
+	font-size: 1.2em;
+	min-height: 180px;
+}
+
+#main-footer {
+	display: flex;
+	justify-content: center;
+	gap: 64px;
+	background: #eaf0fa;
+	color: #222;
+	padding: 32px 0 24px 0;
+	font-size: 1em;
+	border-top: 1px solid #d0d8e8;
+}
+.footer-section {
+	min-width: 160px;
+}
+.footer-section h3 {
+	margin-bottom: 0.5em;
+	font-size: 1.1em;
+	color: #2a4d8f;
+}
+.footer-section ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5em 2em;
+}
+.footer-section li {
+	margin-bottom: 0.2em;
+	word-break: keep-all;
+}
+.footer-section a {
+	color: #2a4d8f;
+	text-decoration: none;
+	font-weight: 500;
+}
+.footer-section a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	#main-header {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem 0.5rem;
+	}
+	.header-nav {
+		margin-top: 0.5em;
+	}
+	#main-banner {
+		height: 48vw;
+		min-height: 180px;
+		max-height: 240px;
+		width: 100%;
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+	.banner-tags {
+		top: 8px;
+		left: 8px;
+		font-size: 0.8em;
+		gap: 0.3em;
+		max-width: calc(100vw - 16px);
+	}
+	
+	.insta-link {
+		right: 8px;
+		bottom: 8px;
+		padding: 0.3em;
+		max-width: 32px;
+	}
+	.insta-logo {
+		width: 28px;
+		height: 28px;
+	}
+	#main-content {
+		margin: 24px auto 16px auto;
+		padding: 0 0.5rem;
+	}
+	.club-description {
+		padding: 1rem;
+		font-size: 1em;
+	}
+	#main-footer {
+		flex-direction: column;
+		gap: 24px;
+		padding: 24px 1rem 16px 1rem;
+		box-sizing: border-box;
+	}
+	.footer-section ul {
+		grid-template-columns: 1fr;
+	}
+}
